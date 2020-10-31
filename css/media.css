@@ -1,0 +1,78 @@
+@media screen and (max-width: 1024px){
+    body {
+        max-width: 900px;
+        margin-left: 5%;
+    }
+    header {
+        height: 250px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    main {
+        margin: 10% 0 0 0;
+    }
+    #header_title {
+        font-size: 45px;
+    }
+
+    .header__inf {
+        font-size: 30px;
+    }
+
+    .dropbtn {
+        background-color: white;
+        opacity: .9;
+        height: 100px;
+        padding: 15px;
+        margin-top: 1px;
+        font-size: 35px;
+        border-radius: 45px;
+        border-color: black;
+        cursor: pointer;
+        width: 100%;
+
+    }
+    .dropdown-content {
+        width: 100%;
+    }
+    td{
+        font-size: 30px;
+
+    }
+    tr{
+        font-size: 35px;
+
+    }
+    th{
+        width: 400px;
+    }
+    h3{
+        font-size: 35px;
+
+    }
+    h2{
+        font-size: 45px;
+
+    }
+    .dropbtn {
+        background-color: white;
+        opacity: .9;
+        height: 100px;
+        padding: 15px;
+        margin-top: 1px;
+        font-size: 35px;
+        border-radius: 45px;
+        border-color: black;
+        cursor: pointer;
+        width: 100%;
+
+    }
+    .dropdown-content {
+        width: 100%;
+    }
+    footer{
+        margin: 0;
+    }
+
+}
