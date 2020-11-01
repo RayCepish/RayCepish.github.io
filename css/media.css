@@ -22,6 +22,11 @@
     .header__inf {
         font-size: 30px;
     }
+    button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
+    }
 
     .dropbtn {
         background-color: white;
