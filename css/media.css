@@ -1,7 +1,10 @@
 @media only screen and (max-width: 1024px){
     body {
-        max-width: 900px;
+        width: 1000px;
         margin-left: 5%;
+        outline: 0;
+        padding: 0;
+        border: 0;
     }
     header {
         height: 250px;
