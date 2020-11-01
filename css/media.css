@@ -1,7 +1,7 @@
 @media only screen and (max-device-width: 1024px){
     body {
-        -webkit-width: 900px;
-        -webkit-margin-left: 5%;
+        width: 900px;
+        margin-left: 5%;
         outline: 0;
         padding: 0;
         border: 0;
@@ -13,7 +13,7 @@
     }
 
     main {
-        -webkit-margin: 10% 0 ;
+        margin: 10% 0 ;
     }
     #header_title {
         font-size: 45px;
@@ -33,11 +33,11 @@
         border-radius: 45px;
         border-color: black;
         cursor: pointer;
-        -webkit-width: 100%;
+        width: 100%;
 
     }
     .dropdown-content {
-        -webkit-width: 100%;
+        width: 100%;
     }
     td{
         font-size: 30px;
@@ -72,10 +72,10 @@
 
     }
     .dropdown-content {
-        -webkit-width: 100%;
+        width: 100%;
     }
     footer{
-        -webkit-margin: 0;
+        margin: 0;
     }
 
 }
