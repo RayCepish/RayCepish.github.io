@@ -1,6 +1,6 @@
 @media only screen and (max-device-width: 1024px){
     body {
-        width: 900px;
+        -webkit-width: 900px;
         margin-left: 5%;
         outline: 0;
         padding: 0;
@@ -73,7 +73,7 @@
         border-radius: 45px;
         border-color: black;
         cursor: pointer;
-        width: 100%;
+        -webkit-width: 100%;
 
     }
     .dropdown-content {
