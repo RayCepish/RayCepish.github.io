@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px){
     body {
         max-width: 900px;
         margin-left: 5%;
