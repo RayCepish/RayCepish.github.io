@@ -1,7 +1,7 @@
 @media only screen and (max-device-width: 1024px){
     body {
         -webkit-width: 900px;
-        margin-left: 5%;
+        -webkit-margin-left: 5%;
         outline: 0;
         padding: 0;
         border: 0;
@@ -13,7 +13,7 @@
     }
 
     main {
-        margin: 10% 0 ;
+        -webkit-margin: 10% 0 ;
     }
     #header_title {
         font-size: 45px;
@@ -33,11 +33,11 @@
         border-radius: 45px;
         border-color: black;
         cursor: pointer;
-        width: 100%;
+        -webkit-width: 100%;
 
     }
     .dropdown-content {
-        width: 100%;
+        -webkit-width: 100%;
     }
     td{
         font-size: 30px;
@@ -48,7 +48,7 @@
 
     }
     th{
-        width: 400px;
+        -webkit-width: 400px;
     }
     h3{
         font-size: 35px;
@@ -72,10 +72,10 @@
 
     }
     .dropdown-content {
-        width: 100%;
+        -webkit-width: 100%;
     }
     footer{
-        margin: 0;
+        -webkit-margin: 0;
     }
 
 }
