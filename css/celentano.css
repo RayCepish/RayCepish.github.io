@@ -1,5 +1,5 @@
 *{
-    margin: 3.5% 0 0 0;
+    margin: 4% 0 0 0;
 }
 /*body*/
 
@@ -116,9 +116,9 @@ h1 {
     opacity:    .9;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 900;
-    height: 90px;
+    height: 80px;
     padding: 22px;
-    margin-top: 1px;
+    margin-top: 15px;
     font-size: 35px;
     border-radius: 45px;
     border-color: black;
