@@ -1,5 +1,5 @@
 *{
-    margin: 4% 0 0 0;
+    margin: 3% 0 0 0;
 }
 /*body*/
 
@@ -144,15 +144,17 @@ h1 {
 }
 
 .dropdown-content {
+    padding-bottom: 10%;
     display: none;
-    position: relative;
+    position:  relative ;
     width: 70%;
     height: 100%
 }
 
 
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {background-color: #ddd;
+margin-bottom: 15px;}
 
 .show {
   display: flex;
