@@ -10,7 +10,7 @@
     }
 
     main {
-        margin: 10% 0 0 0;
+        margin: 10% ;
     }
     #header_title {
         font-size: 45px;
@@ -45,7 +45,7 @@
     }
     h3{
         font-size: 48px;
-        font-weiht: 700;
+        
     }
     h2{
         font-size: 50px;
@@ -66,9 +66,14 @@
     }
     .dropdown-content {
         width: 100%;
+        height: 100%;
     }
     footer{
         margin: 0;
+    }
+        *table{
+        margin: 40px 0 0  0;
+        height: auto;
     }
 
 }
@@ -158,7 +163,7 @@
     }
 
     main {
-        margin: 10% 0 0 0;
+        margin: 15% ;
     }
     #header_title {
         font-size: 45px;
