@@ -147,7 +147,8 @@ h1 {
     display: none;
     position: relative;
     width: 70%;
-    height: 90%
+    height: 90%;
+    padding: 25px;
 }
 
 
