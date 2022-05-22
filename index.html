@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport">
@@ -13,463 +14,850 @@
 
 
 </head>
-<body>
-<section>
-</section>
-<header class="header">
 
-<div class="container__header">
-        <img id="logo" src="logo/logo.png" height="130px">
-        <h1 data-lang="ua" class="header_title">ОНЛАЙН-МЕНЮ </h1>
-            <h1  data-lang="eng" class="header_title">ONLINE MENU </h1>
-        <h3 data-lang="ua" class="header__inf">вулиця Шевченка, 17, Львів</h3>
+<body>
+    <section>
+    </section>
+    <header class="header">
+
+        <div class="container__header">
+            <img id="logo" src="logo/logo.png" height="130px">
+            <h1 data-lang="ua" class="header_title">ОНЛАЙН-МЕНЮ </h1>
+            <h1 data-lang="eng" class="header_title">ONLINE MENU </h1>
+            <h3 data-lang="ua" class="header__inf">вулиця Шевченка, 17, Львів</h3>
             <h3 data-lang="eng" class="header__inf">Shevchenko Street, 17, Lviv</h3>
-<!--checkbox-->
-        <div class="blocks">
-                <div ><img src="flag/ua.svg"  class="uablock" ></div>
-                    <div class='wrap'>
-                        <div class='toggle'>
-                        <input id='checkBox' type='checkbox'  name="lang" id="changLang" onchange="changeLangEvent(this)">
-                            <div class='shadow'></div>
-                                <div class='pizza'>
-                                    <div class='inner'>
-                                        <div class='toppings'></div>
-                                        <div class='toppings'></div>
-                                        <div class='toppings'></div>
-                                        <div class='toppings'></div>
-                                        <div class='toppings'></div>
-                                    </div>
-                                </div>
+            <!--checkbox-->
+            <div class="blocks">
+                <div><img src="flag/ua.svg" class="uablock"></div>
+                <div class='wrap'>
+                    <div class='toggle'>
+                        <input id='checkBox' type='checkbox' name="lang" id="changLang"
+                            onchange="changeLangEvent(this)">
+                        <div class='shadow'></div>
+                        <div class='pizza'>
+                            <div class='inner'>
+                                <div class='toppings'></div>
+                                <div class='toppings'></div>
+                                <div class='toppings'></div>
+                                <div class='toppings'></div>
+                                <div class='toppings'></div>
+                            </div>
                         </div>
                     </div>
+                </div>
                 <div><img src="flag/gb.svg" class="usblock"></div>
+            </div>
+
         </div>
 
-</div>
 
+    </header>
 
-</header>
-
-<main class="main">
-<!--    =====================================VINE=============================
+    <main class="main">
+        <!--    =====================================VINE=============================
 ===============================================================================-->
-    <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn1')"class="dropbtn">ВИНО</button>
-        <button data-lang="eng" onclick="myFunction('btn1')"class="dropbtn">WINE</button>
-        <div id="btn1" class="dropdown-content">
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn1')" class="dropbtn">ВИНО</button>
+            <button data-lang="eng" onclick="myFunction('btn1')" class="dropbtn">WINE</button>
+            <div id="btn1" class="dropdown-content">
 
-            <table>
-                <tr data-lang="ua" ><td><h2>Frizzante</h2></td><th>МЛ  /  ГРН</th></tr>
-                <tr data-lang="ua"><td><h3>Pinot Grigio Brut, Canti</h3></td><th>125 / 750 70 / 417</th></tr>
-                <tr data-lang="ua"><td >Регіон: Венето</td></tr>
-                <tr data-lang="ua"><td>Сорти: Піно Гріджіо, Брют. Біле</td></tr>
-                    <tr data-lang="eng"><td><h2>Frizzante</h2></td><th>ML / UAH</th></tr>
-                    <tr data-lang="eng"><td><h3>Pinot Grigio Brut, Canti</h3></td><th>125 / 750 70 / 417</th></tr>
-                    <tr data-lang="eng"><td>Region: Veneto</td></tr>
-                    <tr data-lang="eng"><td>Sorts: Pinot Griggio, Brut. White</td></tr>
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Frizzante</h2>
+                        </td>
+                        <th>МЛ / ГРН</th>
+                    </tr>
 
-                    <tr data-lang="ua"><td><h3>Lambrusco dell Emilia Bianco / Rosso </h3></td><th> 750  270</th></tr>
-                    <tr data-lang="ua"><td >Регіон: Емілія-Романья</td></tr>
-                    <tr data-lang="ua"><td>Сорти: Ламбруско дель Емілія. Солодке , біле/червоне</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Pinot Grigio Brut, Canti</h3>
+                        </td>
+                        <th>125 / 750 109 / 655</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>Регіон: Венето</td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>Сорти: Піно Гріджіо, Брют. Біле</td>
+                    </tr>
 
-                    <tr data-lang="eng"><td><h3>PLambrusco dell Emilia Bianco / Rosso</h3></td><th>750  270</th></tr>
-                    <tr data-lang="eng"><td>Region: Emilia Romagnja</td></tr>
-                    <tr data-lang="eng"><td>Varieties: Lambrusco del Emilia. Sweet , white /red</td></tr>
-<!--                -->
-                <tr><td><h2>Bianco</h2></td>
-                <tr><td><h3>Mosto Parzialmente Fermentato</h3></td><th>125 / 750 70 / 417</th></tr>
-                <tr data-lang="ua"><td>Регіон: П'ємонт</td></tr>
-                <tr data-lang="ua"><td>Сорт: Москато. Солодке</td></tr>
-                    <tr data-lang="eng"><td>Region: Piedmont</td></tr>
-                    <tr data-lang="eng"><td>Sort: Mosquito. Sweet</td></tr>
-<!--                -->
-                <tr><td><h3>Pinot Grigio (Dorigo), DOC</h3></td><th>125 / 750	91 / 546</th></tr>
-                <tr data-lang="ua"><td>Регіон: Фріулі</td></tr>
-                <tr data-lang="ua"><td>Сорт: Піно Гріджіо. Сухе</td></tr>
-                    <tr data-lang="eng"><td>Region: Friuli</td></tr>
-                    <tr data-lang="eng"><td>Sort: Pinot Griggio. Dry</td></tr>
-<!--                -->
-                <tr><td><h3>Roccaperciata Inzolia- Chardonnay (Firriato), IGT</h3></td><th>125 / 750 59 / 353</th></tr>
-                <tr data-lang="ua"><td>Регіон: Сицилія</td></tr>
-                <tr data-lang="ua" ><td>Сорти: Шардоне, Інзолія. Сухе</td></tr>
-                    <tr data-lang="eng"><td>Region: Sicily</td></tr>
-                    <tr data-lang="eng"><td>Sorts: Chardon, Inzolia. Dry</td></tr>
-<!--                -->
-                <tr><td><h2>Rosso</h2></td></tr>
-                <tr><td><h3>Primitivo, Cantele</h3></td><th>125 / 750 70 / 417</th></tr>
-                <tr data-lang="ua"><td>Регіон: Пулія </td>
-                <tr data-lang="ua"><td>Сорт: Прімітіво. Сухе</td>
-                    <tr data-lang="eng"><td>Region: Pulia </td>
-                    <tr data-lang="eng"><td>Sort: Primitivo. Dry</td>
-<!--                -->
-                <tr><td><h3>Lagone Aia Vecchia</h3></td><th>125 / 750 91 / 546</th></tr>
-                <tr data-lang="ua"><td>Регіон: Тоскана</td>
-                <tr data-lang="ua"><td>Сорти: Мерло, Каберне, Совіньйон, Каберне Фран. Сухе</td>
-                    <tr data-lang="eng"><td>Region: Tuscany</td>
-                    <tr data-lang="eng"><td>Sorts: Merlo, Caberne, Sauvignon, Caberne Fran. Dry</td>
-<!--                -->
-                <tr><td><h3>Roccaperciata Nero d'Avola-Syrah (Firriato), IGT</h3></td><th>125 / 750 59 / 353</th></tr>
-                <tr data-lang="ua"><td>Регіон: Сицилія</td>
-                <tr data-lang="ua"><td>Сорти: Сіра, Неро д'Авола. Сухе </td>
-                    <tr data-lang="eng"><td>Region: Sicily</td>
-                    <tr data-lang="eng"><td>Sorts: Gray, Nero d'Avola. Dry</td>
-<!--                -->
-                <tr><td><h2>Rosato</h2></td></tr>
-                <tr><td><h3>Bardolino Chiaretto Classico (Zeni), DOC</h3></td><th>125 / 750 59 / 353</th></tr>
-                <tr data-lang="ua"><td>Регіон: Венето</td>
-                <tr data-lang="ua"><td>Сорти: Корвіна, Рондінелла, Молінара. Сухе</td>
-                    <tr data-lang="eng"><td>region: Veneto</td>
-                    <tr data-lang="eng"><td>Sorts: Corwin, Rondinella, Molinara. Dry</td>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Frizzante</h2>
+                        </td>
+                        <th>ML / UAH</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Pinot Grigio Brut, Canti</h3>
+                        </td>
+                        <th>125 / 750 109 / 655</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>Region: Veneto</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>Sorts: Pinot Griggio, Brut. White</td>
+                    </tr>
 
 
-                        <tr  data-lang="ua"><td><h2>Ігристі вина</h2></td></tr>
-                        <tr data-lang="eng" ><td><h2>Sparkling wines</h2></td></tr>
-                        <tr><td><h3>VILLA MARE Fragilino Bianco</h3></td><th> 750  187</th></tr>
-               
-                        <tr><td><h3>Martini Prosecco</h3></td><th> 750  187</th></tr>
-            </table>
+                    <!--                -->
+                    <tr>
+                        <td>
+                            <h2>Bianco</h2>
+                        </td>
 
+                        <!--                -->
+                    <tr>
+                        <td>
+                            <h3>Pinot Grigio (Dorigo), DOC</h3>
+                        </td>
+                        <th>125 / 750 109 / 655</th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>Регіон: Фріулі</td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>Сорт: Піно Гріджіо. Сухе</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>Region: Friuli</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>Sort: Pinot Griggio. Dry</td>
+                    </tr>
+                    <!--                -->
+
+                    <!--                -->
+                    <tr>
+                        <td>
+                            <h2>Rosso</h2>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>Primitivo, Cantele</h3>
+                        </td>
+                        <th>125 / 750 94 / 470</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>Регіон: Пулія </td>
+                    <tr data-lang="ua">
+                        <td>Сорт: Прімітіво. Сухе</td>
+                    <tr data-lang="eng">
+                        <td>Region: Pulia </td>
+                    <tr data-lang="eng">
+                        <td>Sort: Primitivo. Dry</td>
+                        <!--                -->
+                    <tr>
+                        <td>
+                            <h3>Lagone Aia Vecchia</h3>
+                        </td>
+                        <th>125 / 750 118 / 590</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>Регіон: Тоскана</td>
+                    <tr data-lang="ua">
+                        <td>Сорти: Мерло, Каберне, Совіньйон, Каберне Фран. Сухе</td>
+                    <tr data-lang="eng">
+                        <td>Region: Tuscany</td>
+                    <tr data-lang="eng">
+                        <td>Sorts: Merlo, Caberne, Sauvignon, Caberne Fran. Dry</td>
+                        <!--                -->
+                    <tr>
+                        <td>
+                            <h3>Roccaperciata Nero d'Avola-Syrah (Firriato), IGT</h3>
+                        </td>
+                        <th>125 / 750 106 / 530</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>Регіон: Сицилія</td>
+                    <tr data-lang="ua">
+                        <td>Сорти: Сіра, Неро д'Авола. Сухе </td>
+                    <tr data-lang="eng">
+                        <td>Region: Sicily</td>
+                    <tr data-lang="eng">
+                        <td>Sorts: Gray, Nero d'Avola. Dry</td>
+                        <!--                -->
+
+                </table>
+
+            </div>
         </div>
-    </div>
-
+        <!-- 
     <div class="dropdown">
         <button data-lang="ua" onclick="myFunction('btn16')"class="dropbtn">ВИННА КАРТА</button>
         <button data-lang="eng" onclick="myFunction('btn16')"class="dropbtn">WINE CARD</button>
         <div id="btn16" class="dropdown-content">
-
             <table>
                 <tr data-lang="ua" ><td><h2>Білі</h2></td><th>МЛ  /  ГРН</th></tr>
                 <tr data-lang="ua"><td><h3>Soave Classico, Cesari</h3></td><th> 750 / 360</th></tr>
                 <tr data-lang="ua"><td >Гарганега;Требиано;Шардоне</td></tr>
                 <tr data-lang="ua"><td>Сухе</td></tr>
-                   <!--  -->
                 <tr data-lang="ua"><td><h3>Chardonnay Veneto, Canti</h3></td><th> 750 / 260</th></tr>
                 <tr data-lang="ua"><td >Шардоне</td></tr>
                 <tr data-lang="ua"><td>Напівсолодке</td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Mosto Parzialmente Fermentato; Pelissero</h3></td><th> 750 / 380</th></tr>
                 <tr data-lang="ua"><td >Москато</td></tr>
                 <tr data-lang="ua"><td>Солодке</td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Preffer Classic Line, Colterenzio</h3></td><th> 750 / 520</th></tr>
                 <tr data-lang="ua"><td >Москато Джало</td></tr>
                 <tr data-lang="ua"><td>Напівсухе</td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Pinot Grigio, Dorigo</h3></td><th> 750 / 480</th></tr>
                 <tr data-lang="ua"><td >Піно Гріджіо</td></tr>
                 <tr data-lang="ua"><td>Сухе</td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Libaio Chardonnay ,Ruffino</h3></td><th> 750 / 420</th></tr>
                 <tr data-lang="ua"><td > Шардоне</td></tr>
                 <tr data-lang="ua"><td>Сухе</td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Inzolia-Chardonnay Roccaperciata, Firriato</h3></td><th> 750 / 300</th></tr>
                 <tr data-lang="ua"><td >Інзолія,Шардоне</td></tr>
                 <tr data-lang="ua"><td>Сухе</td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Vermentino gemellae. Cantina Gallura</h3></td><th> 750 / 450</th></tr>
                 <tr data-lang="ua"><td >Верментіно</td></tr>
                 <tr data-lang="ua"><td>Сухе</td></tr>
-                <!--========                               eng                   ========-->
+              ========                               eng                   ========
                 <tr data-lang="eng" ><td><h2>Bianco</h2></td><th>МЛ  /  ГРН</th></tr>
                 <tr data-lang="eng"><td><h3>Soave Classico, Cesari</h3></td><th> 750 / 360</th></tr>
                 <tr data-lang="eng"><td >Garganega; Trebiano; Chardonnay </td></tr>
                 <tr data-lang="eng"><td>Dry</td></tr>
-                   <!--  -->
                 <tr data-lang="eng"><td><h3>Chardonnay Veneto, Canti</h3></td><th> 750 / 260</th></tr>
                 <tr data-lang="eng"><td >Chardonnay</td></tr>
                 <tr data-lang="eng"><td>Semi-sweet</td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Mosto Parzialmente Fermentato; Pelissero</h3></td><th> 750 / 380</th></tr>
                 <tr data-lang="eng"><td >The Muscovite </td></tr>
                 <tr data-lang="eng"><td>Sweet</td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Preffer Classic Line, Colterenzio</h3></td><th> 750 / 520</th></tr>
                 <tr data-lang="eng"><td >The Muscovite Jalo</td></tr>
                 <tr data-lang="eng"><td>Semi-dry</td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Pinot Grigio, Dorigo</h3></td><th> 750 / 480</th></tr>
                 <tr data-lang="eng"><td >Pinot Grigio</td></tr>
                 <tr data-lang="eng"><td>Dry</td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Libaio Chardonnay ,Ruffino</h3></td><th> 750 / 420</th></tr>
                 <tr data-lang="eng"><td > Chardonnay</td></tr>
                 <tr data-lang="eng"><td>Dry</td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Inzolia-Chardonnay Roccaperciata, Firriato</h3></td><th> 750 / 300</th></tr>
                 <tr data-lang="eng"><td >Insolia, Chardonnay</td></tr>
                 <tr data-lang="eng"><td>Dry</td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Vermentino gemellae. Cantina Gallura</h3></td><th> 750 / 450</th></tr>
                 <tr data-lang="eng"><td >Vermentino</td></tr>
                 <tr data-lang="eng"><td>Dry</td></tr>
-                <!--            Ігристі         -->
+                        Ігристі         
                 <tr data-lang="ua" ><td><h2>Ігристі</h2></td><th>МЛ  /  ГРН</th></tr>
                 <tr data-lang="ua"><td><h3>Prosecco Millesimato; Canti</h3></td><th> 750 / 390</th></tr>
                 <tr data-lang="ua"><td >Глера</td></tr>
                 <tr data-lang="ua"><td >Extra-Dry</td></tr>
                 <tr data-lang="ua"><td>біле</td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Pinot Grigio Brut; Canti</h3></td><th> 750 / 300</th></tr>
                 <tr data-lang="ua"><td >Глера</td></tr>
                 <tr data-lang="ua"><td >Brut</td></tr>
                 <tr data-lang="ua"><td>біле</td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Lambrusco dall 'Emilia Bianco, Rosato, Rosso, Dry. Chilari</h3></td><th> 750 / 240</th></tr>
                 <tr data-lang="ua"><td >Ламбруско</td></tr>
                 <tr data-lang="ua"><td >Amabile,Dry</td></tr>
                 <tr data-lang="ua"><td>біле, рожеве, червоне</td></tr>
-                <!--=============== eng   ============-->
+            =============== eng   ============
                 <tr data-lang="eng" ><td><h2>FRIZZANTE</h2></td><th>МЛ  /  ГРН</th></tr>
                 <tr data-lang="eng"><td><h3>Prosecco Millesimato; Canti</h3></td><th> 750 / 390</th></tr>
                 <tr data-lang="eng"><td >Glera</td></tr>
                 <tr data-lang="eng"><td >Extra-Dry</td></tr>
                 <tr data-lang="eng"><td>white</td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Pinot Grigio Brut; Canti</h3></td><th> 750 / 300</th></tr>
                 <tr data-lang="eng"><td >Glera</td></tr>
                 <tr data-lang="eng"><td >Brut</td></tr>
                 <tr data-lang="eng"><td>white</td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Lambrusco dall 'Emilia Bianco, Rosato, Rosso, Dry. Chilari</h3></td><th> 750 / 240</th></tr>
                 <tr data-lang="eng"><td >Lambrusco</td></tr>
                 <tr data-lang="eng"><td >Amabile,Dry</td></tr>
                 <tr data-lang="eng"><td>white, roses, red</td></tr>
-                <!--               червоне                -->
+                           червоне                
                 <tr data-lang="ua" ><td><h2>Червоне</h2></td><th>МЛ  /  ГРН</th></tr>
                 <tr data-lang="ua"><td><h3>Valpolicella Classeco, Cesari</h3></td><th> 750 / 440</th></tr>
                 <tr data-lang="ua"><td >Корвина Веронезе; Санджовезе; Рондинелла</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Merlot Veneto</h3></td><th> 750 / 260</th></tr>
                 <tr data-lang="ua"><td >Мерло</td></tr>
                 <tr data-lang="ua"><td >Напівсолодке<td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Chianti, Ruffino </h3></td><th> 750 / 340</th></tr>
                 <tr data-lang="ua"><td >Санджіовезе</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Lagone, Aia Vecchia</h3></td><th> 750 / 450</th></tr>
                 <tr data-lang="ua"><td >Мерло; Кабарне Совиньйон; Кабарне Фран</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Ilico, Illumunati Dino</h3></td><th> 750 / 390</th></tr>
                 <tr data-lang="ua"><td >Монтепульчано</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Primitivo Di Manduria; Di Marco</h3></td><th> 750 / 360</th></tr>
                 <tr data-lang="ua"><td >Прімітіво</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Nero d'Avola Roccaperciata, Firriato</h3></td><th> 750 / 300</th></tr>
                 <tr data-lang="ua"><td >Неро д'Авола</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Plumbago; Planeta</h3></td><th> 750 / 660</th></tr>
                 <tr data-lang="ua"><td >Неро д'Авола</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Lacryma Cristi Rosso, Feudi di San Gregorio</h3></td><th> 750 / 620</th></tr>
                 <tr data-lang="ua"><td >Пьедіроссо</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                <!--  -->
                 <tr data-lang="ua"><td><h3>Vino Rosso Le Nature</h3></td><th> 750 / 340</th></tr>
                 <tr data-lang="ua"><td >Неббіола,Барбера,Дольчетто</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                <!--=====================  eng      =================================-->
+                =====================  eng      =================================-
                 <tr data-lang="eng" ><td><h2>ROSSO</h2></td><th>МЛ  /  ГРН</th></tr>
                 <tr data-lang="eng"><td><h3>Valpolicella Classeco, Cesari</h3></td><th> 750 / 440</th></tr>
                 <tr data-lang="eng"><td >Corvina Veronese; Sangiovese; Rondinella</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Merlot Veneto</h3></td><th> 750 / 260</th></tr>
                 <tr data-lang="eng"><td >Merlo</td></tr>
                 <tr data-lang="eng"><td >Semi-sweet<td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Chianti, Ruffino </h3></td><th> 750 / 340</th></tr>
                 <tr data-lang="eng"><td >Sangiovese</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Lagone, Aia Vecchia</h3></td><th> 750 / 450</th></tr>
                 <tr data-lang="eng"><td >Merlo; Cabernet Sauvignon; Cabernet Fran</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Ilico, Illumunati Dino</h3></td><th> 750 / 390</th></tr>
                 <tr data-lang="eng"><td >Montepulciano</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Primitivo Di Manduria; Di Marco</h3></td><th> 750 / 360</th></tr>
                 <tr data-lang="eng"><td >Primitive</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Nero d'Avola Roccaperciata, Firriato</h3></td><th> 750 / 300</th></tr>
                 <tr data-lang="eng"><td >Nero d'Avola</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Plumbago; Planeta</h3></td><th> 750 / 660</th></tr>
                 <tr data-lang="eng"><td >Nero d'Avola</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Lacryma Cristi Rosso, Feudi di San Gregorio</h3></td><th> 750 / 620</th></tr>
                 <tr data-lang="eng"><td >Piedirosso</td></tr>
                 <tr data-lang="eng"><td >Сухе<td></tr>
-                <!--  -->
                 <tr data-lang="eng"><td><h3>Vino Rosso Le Nature</h3></td><th> 750 / 340</th></tr>
                 <tr data-lang="eng"><td >Nebbiola, Barbera, Dolcetto</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                    <!-- рожеве -->
+                    рожеве 
                 <tr data-lang="ua" ><td><h2>РОЖЕВЕ</h2></td><th>МЛ  /  ГРН</th></tr>
                 <tr data-lang="ua"><td><h3>Bardolino Chiaretto Classico, Zeni</h3></td><th> 750 / 300</th></tr>
                 <tr data-lang="ua"><td >Корвина; Молинара; Рондинелла</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                    <!--  -->
                 <tr data-lang="ua"><td><h3>Preffer Pink, Colterenzio</h3></td><th> 750 / 660</th></tr>
                 <tr data-lang="ua"><td >Совиньйон Блан, Мерло, Мюллер Тургау, Пино неро</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                    <!--  -->
                 <tr data-lang="ua"><td><h3>Campirosa, Illumunati Dino</h3></td><th> 750 / 320</th></tr>
                 <tr data-lang="ua"><td >Монтепульчано</td></tr>
                 <tr data-lang="ua"><td >Сухе<td></tr>
-                    <!-- =============== Eng ================== -->
+             =============== Eng ================== 
                 <tr data-lang="eng" ><td><h2>ROSATO</h2></td><th>МЛ  /  ГРН</th></tr>
                 <tr data-lang="eng"><td><h3>Bardolino Chiaretto Classico, Zeni</h3></td><th> 750 / 300</th></tr>
                 <tr data-lang="eng"><td >Corvina; Molinara; Rondinella</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                        <!--  -->
                 <tr data-lang="eng"><td><h3>Preffer Pink, Colterenzio</h3></td><th> 750 / 660</th></tr>
                 <tr data-lang="eng"><td >Sauvignon Blanc, Merlot, Mueller Thurgau, Pinot Noir</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
-                        <!--  -->
                 <tr data-lang="eng"><td><h3>Campirosa, Illumunati Dino</h3></td><th> 750 / 320</th></tr>
                 <tr data-lang="eng"><td >Montepulciano</td></tr>
                 <tr data-lang="eng"><td >Dry<td></tr>
             </table>
-
-
         </div>
     </div>
-<!--===================================HOT DRINKS==========================
+     -->
+        <!--===================================HOT DRINKS==========================
 ======================================================================-->
-    <div class="dropdown">
-        <button  data-lang="ua" onclick="myFunction('btn2')" class="dropbtn">ГАРЯЧІ НАПОЇ</button>
-            <button  data-lang="eng" onclick="myFunction('btn2')" class="dropbtn">HOT DRINKS</button>
-        <div id="btn2" class="dropdown-content">
-            <table>
-                <tr data-lang="ua"><td><h2>Кава</h2></td><th>МЛ  /  ГРН</th></tr>
-                <tr data-lang="ua"><td><h3>Еспресо</h3></td><th>30 / 35</th></tr>
-                <tr data-lang="ua"><td><h3>Американо</h3></td><th>30 / 35</th></tr>
-                <tr data-lang="ua"><td><h3>Капучіно</h3></td><th>150 / 40</th></tr>
-                <tr data-lang="ua"><td><h3>Лате Макіато</h3></td><th>200 / 42</th></tr>
-                <tr data-lang="ua"><td><h3>Какао з маршмелоу</h3></td><th>200 / 44</th></tr>
-                <tr data-lang="ua"><td><h3>Кава по-ірландськи</h3></td><th>200 / 87</th></tr>
-                <tr data-lang="ua"><td><h3>Флет Вайт</h3></td><th>180 / 46</th></tr>
-<!--                -->
-                    <tr data-lang="eng"><td><h2>Coffee</h2></td><th>ML / UAH</th></tr>
-                    <tr data-lang="eng"><td><h3>Espresso</h3></td><th>30 / 35</th></tr>
-                    <tr data-lang="eng"><td><h3>Americano</h3></td><th>30 / 35</th></tr>
-                    <tr data-lang="eng"><td><h3>Capucino</h3></td><th>150 / 40</th></tr>
-                    <tr data-lang="eng"><td><h3>Lathe Macchiato</h3></td><th>200 / 42</th></tr>
-                    <tr data-lang="eng"><td><h3>Cocoa of marshmallow</h3></td><th>200 / 44</th></tr>
-                    <tr data-lang="eng"><td><h3>Irish coffee</h3></td><th>200 / 87</th></tr>
-                    <tr data-lang="eng"><td><h3>Flat White</h3></td><th>180 / 46</th></tr>
-<!--                -->
-                <tr data-lang="ua"><td><h2>Чай</h2></td></tr>
-                <tr data-lang="ua"><td><h3>Чай листовий в асортименті</h3></td><th>450 / 42</th></tr>
-                <tr data-lang="ua"><td>Фруктовий / Трав'яний / Чорний / Зелений</td></tr>
-<!--                -->
-                    <tr data-lang="eng"><td><h2>Tea</h2></td></tr>
-                    <tr data-lang="eng"><td><h3>Assortment tea</h3></td><th>450 / 42</th></tr>
-                    <tr data-lang="eng"><td>Fruit / Herbal / Black / Green</td></tr>
-<!--                -->
-                <tr data-lang="ua"><td><h3>Домашні чаї "Щастя в долонях"</h3>
-                <tr data-lang="ua"><td><h3>М'ята з корицею</h3></td><th>200 / 42</th></tr>
-             
-                <tr data-lang="ua"><td><h3>Обліпиха з імберем та медом</h3></td><th>200 / 42</th></tr>
-                <tr data-lang="ua"><td><h3>Смородина, грейфрут та м'ята</h3></td><th>200 / 42</th></tr>
-             
-                
-<!--                -->
-                    <tr data-lang="eng"><td><h3>Homemade Tea 'Happiness in Hands'</h3>
-                    <tr data-lang="eng"><td><h3>Cinnamon Ball</h3></td><th>200 / 42</th></tr>
-             
-                    <tr data-lang="eng"><td><h3>Sea buckthorn with ginger and honey</h3></td><th>200 / 42</th></tr>
-                    <tr data-lang="eng"><td><h3>Currants, grapefruit and mint</h3></td><th>200 / 42</th></tr>
-       
-                   
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn2')" class="dropbtn">ГАРЯЧІ НАПОЇ</button>
+            <button data-lang="eng" onclick="myFunction('btn2')" class="dropbtn">HOT DRINKS</button>
+            <div id="btn2" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Кава</h2>
+                        </td>
+                        <th>МЛ / ГРН</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Еспресо</h3>
+                        </td>
+                        <th>30 / 42</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Американо</h3>
+                        </td>
+                        <th>30 / 42</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Капучіно</h3>
+                        </td>
+                        <th>150 / 48</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Лате Макіато</h3>
+                        </td>
+                        <th>200 / 50</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Какао з маршмелоу</h3>
+                        </td>
+                        <th>200 / 52</th>
+                    </tr>
+                    <!-- <tr data-lang="ua"><td><h3>Кава по-ірландськи</h3></td><th>200 / 87</th></tr> -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Флет Вайт</h3>
+                        </td>
+                        <th>180 / 55</th>
+                    </tr>
+                    <!--                -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Coffee</h2>
+                        </td>
+                        <th>ML / UAH</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Espresso</h3>
+                        </td>
+                        <th>30 / 42</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Americano</h3>
+                        </td>
+                        <th>30 / 42</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Capucino</h3>
+                        </td>
+                        <th>150 / 48</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Lathe Macchiato</h3>
+                        </td>
+                        <th>200 / 50</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Cocoa of marshmallow</h3>
+                        </td>
+                        <th>200 / 52</th>
+                    </tr>
+                    <!-- <tr data-lang="eng"><td><h3>Irish coffee</h3></td><th>200 / 87</th></tr> -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Flat White</h3>
+                        </td>
+                        <th>180 / 55</th>
+                    </tr>
+                    <!--                -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Чай</h2>
+                        </td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Чай листовий в асортименті</h3>
+                        </td>
+                        <th>450 / 50</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>Фруктовий / Трав'яний / Чорний / Зелений</td>
+                    </tr>
+                    <!--                -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Tea</h2>
+                        </td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Assortment tea</h3>
+                        </td>
+                        <th>450 / 50</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>Fruit / Herbal / Black / Green</td>
+                    </tr>
+                    <!--                -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Домашні чаї "Щастя в долонях"</h3>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>М'ята з корицею</h3>
+                        </td>
+                        <th>200 / 42</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Полуниця з базиліком</h3>
+                        </td>
+                        <th>200 / 61</th>
+                    </tr>
 
-            </table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Обліпиха з імберем та медом</h3>
+                        </td>
+                        <th>200 / 42</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Смородина, грейфрут та м'ята</h3>
+                        </td>
+                        <th>200 / 42</th>
+                    </tr>
+
+
+                    <!--                -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Homemade Tea 'Happiness in Hands'</h3>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Cinnamon Ball</h3>
+                        </td>
+                        <th>200 / 42</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Strawberries with basil</h3>
+                        </td>
+                        <th>200 / 61</th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Sea buckthorn with ginger and honey</h3>
+                        </td>
+                        <th>200 / 42</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Currants, grapefruit and mint</h3>
+                        </td>
+                        <th>200 / 42</th>
+                    </tr>
+
+
+
+                </table>
+            </div>
         </div>
-    </div>
-<!--==================================================================DRINKS=============================
+        <!--==================================================================DRINKS=============================
 ================================================================-->
-    <div class="dropdown">
-        <button  data-lang="ua" onclick="myFunction('btn3')" class="dropbtn">ХОЛОДНІ НАПОЇ</button>
-          <button data-lang="eng" onclick="myFunction('btn3')" class="dropbtn">DRINKS</button>
-        <div id="btn3" class="dropdown-content">
-           <table>
-               <tr data-lang="ua"><td><h2>Напої</h2></td><th>МЛ  /  ГРН</th></tr>
-                <tr data-lang="eng"><td><h2>Drinks</h2></td><th>ML / UAH</th></tr>
-               <tr><td><h3>7-UP / Mirinda</h3></td><th>500 / 29</th></tr>
-               <tr><td><h3>Tonic Evervess</h3></td><th>500 / 29</th></tr>
-               <tr data-lang="ua"><td><h3>Моршинська преміум</h3></td><th>500 / 42</th></tr>
-               <tr data-lang="ua"><td>вода мінеральна негазована / слабогазована</td></tr>
-                   <tr data-lang="eng"><td><h3>Morshinska Premium</h3></td><th>500 / 42</th></tr>
-                   <tr data-lang="eng"><td>still mineral water / semi-sparkling mineral water</td></tr>
-               <tr><td><h3>Pepsi</h3></td><th>300 / 29</th></tr>
-               <tr data-lang="ua"><td><h3>Сік Sandora</h3></td><th>250 / 29</th></tr>
-                 <tr data-lang="eng"><td><h3>Sandora juice</h3></td><th>250 / 29</th></tr>
-               <tr><td><h3>Borjomi</h3></td><th>500 / 59</th></tr>
-               <tr data-lang="ua"><td>вода мінеральна</td></tr>
-                 <tr data-lang="eng"><td>mineral water</td></tr>
-               <tr><td><h3>Aqua Minerale life</h3></td><th>500 / 29</th></tr>
-               <tr data-lang="ua"><td>вода мінеральна</td></tr>
-                <tr data-lang="eng"><td>mineral water</td></tr>
-<!--               -->
-               <tr data-lang="ua"><td><h2>Фреші</h2></td>
-               <tr data-lang="ua"><td><h3>Фреш</h3></td><th>250/74</th></tr>
-               <tr data-lang="ua"><td>апельсин/лимон/грейфрут</td></tr>
-               <tr data-lang="ua"><td><h3>Фреш</h3></td><th>250/57</th></tr>
-               <tr data-lang="ua"><td>морква/яблуко</td></tr>
-               <!--  -->
-               <tr data-lang="eng"><td><h2>Fresh</h2></td>
-                <tr data-lang="eng"><td><h3>Fresh</h3></td><th>250/69</th></tr>
-                <tr data-lang="eng"><td>orange/lemon/grayfruit</td></tr>
-                <tr data-lang="eng"><td><h3>Fresh</h3></td><th>250/53</th></tr>
-                <tr data-lang="eng"><td>carrot/apple</td></tr>
-               <!--  -->
-               <tr data-lang="ua"><td><h2>Лимонади</h2></td>
-                <tr data-lang="ua"><td><h3>Лимонад в асортименті</h3></td><th>1000/97</th></tr>
-                <tr data-lang="ua"><td><h3>Лимонад в асортименті</h3></td><th>300/37</th></tr>
-                <!--  -->
-                <tr data-lang="eng"><td><h2>Lemonades</h2></td>
-                <tr data-lang="eng"><td><h3>Lemonade in assortment</h3></td><th>1000/97</th></tr>
-                <tr data-lang="eng"><td><h3>Lemonade in assortment</h3></td><th>300/37</th></tr>
-<!--  -->
-                  
-<!--               -->
-               <tr data-lang="ua"><td><h2>Коктейлі</h2></td></tr>
-               <tr data-lang="ua"><td><h2>безалкогольні</h2></td></tr>
-               <tr data-lang="ua"><td><h3>Смурфетка</h3></td><th>360/59</th></tr>
-               <tr data-lang="ua"><td>сироп Blue curacao, ананасовий сік, 7-UP,лід</td></tr>
-               <tr data-lang="ua"><td><h3>Мілк-шейк</h3></td><th>190/44</th></tr>
-               <tr data-lang="ua"><td>вершковий / полуничний / банановий / шоколадний</td></tr>
-               <tr data-lang="ua"><td><h3>Mojito 0%</h3></td><th>425/63</th></tr>
-               <tr data-lang="ua"><td>лайм, м'ята, 7-UP або содова, лід</td></tr>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn3')" class="dropbtn">ХОЛОДНІ НАПОЇ</button>
+            <button data-lang="eng" onclick="myFunction('btn3')" class="dropbtn">DRINKS</button>
+            <div id="btn3" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Напої</h2>
+                        </td>
+                        <th>МЛ / ГРН</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Drinks</h2>
+                        </td>
+                        <th>ML / UAH</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>7-UP / Mirinda</h3>
+                        </td>
+                        <th>500 / 35</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Tonic Evervess</h3>
+                        </td>
+                        <th>500 / 35</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Моршинська преміум</h3>
+                        </td>
+                        <th>500 / 50</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>вода мінеральна негазована / слабогазована</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Morshinska Premium</h3>
+                        </td>
+                        <th>500 / 50</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>still mineral water / semi-sparkling mineral water</td>
+                    </tr>
 
-                <tr data-lang="eng"><td><h2>Cocktails</h2></td></tr>
-                <tr data-lang="eng"><td><h2>non-alcoholic</h2></td></tr>
-                <tr data-lang="eng"><td><h3>Smurfette</h3></td><th>360/59</th></tr>
-                <tr data-lang="eng"><td>Blue curacao syrup, Pineapple juice, 7-UP, ice</td></tr>
-                <tr data-lang="eng"><td><h3>Milk shake</h3></td><th>190/44</th></tr>
-                <tr data-lang="eng"><td>creamy / strawberry / banana / chocolate</td></tr>
-                <tr data-lang="eng"><td><h3>Mojito 0%</h3></td><th>425/63</th></tr>
-                <tr data-lang="eng"><td>Lime, mint, 7-UP or soda, ice</td></tr>
-           </table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Pepsi скло</h3>
+                        </td>
+                        <th>330 / 35</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Pepsi glass</h3>
+                        </td>
+                        <th>330 / 35</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Pepsi </h3>
+                        </td>
+                        <th>500 / 29</th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Сік Sandora</h3>
+                        </td>
+                        <th>250 / 29</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Sandora juice</h3>
+                        </td>
+                        <th>250 / 29</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Сік Sandora</h3>
+                        </td>
+                        <th>950 / 74</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Sandora juice</h3>
+                        </td>
+                        <th>950 / 74</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>Borjomi</h3>
+                        </td>
+                        <th>500 / 71</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>вода мінеральна</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>mineral water</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Aqua Minerale life</h3>
+                        </td>
+                        <th>500 / 35</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>вода мінеральна</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>mineral water</td>
+                    </tr>
+                    <!--               -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Фреші</h2>
+                        </td>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Фреш</h3>
+                        </td>
+                        <th>250/74</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>апельсин/лимон/грейфрут</td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Фреш</h3>
+                        </td>
+                        <th>250/57</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>морква/яблуко</td>
+                    </tr>
+                    <!--  -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Fresh</h2>
+                        </td>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Fresh</h3>
+                        </td>
+                        <th>250/81</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>orange/lemon/grayfruit</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Fresh</h3>
+                        </td>
+                        <th>250/63</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>carrot/apple</td>
+                    </tr>
+                    <!--  -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Лимонади</h2>
+                        </td>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Лимонад в асортименті</h3>
+                        </td>
+                        <th>1000/120</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Лимонад в асортименті</h3>
+                        </td>
+                        <th>300/48</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Лимонад ягідний</h3>
+                        </td>
+                        <th>1000/120</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Лимонад ягідний</h3>
+                        </td>
+                        <th>300/48</th>
+                    </tr>
+                    <!--  -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Lemonades</h2>
+                        </td>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Lemonade in assortment</h3>
+                        </td>
+                        <th>1000/120</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Lemonade in assortment</h3>
+                        </td>
+                        <th>300/48</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Lemonade with berries</h3>
+                        </td>
+                        <th>1000/120</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Lemonade with berries</h3>
+                        </td>
+                        <th>300/48</th>
+                    </tr>
+                    <!--  -->
+
+                    <!--               -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Коктейлі</h2>
+                        </td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>безалкогольні</h2>
+                        </td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Смурфетка</h3>
+                        </td>
+                        <th>360/70</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>сироп Blue curacao, ананасовий сік, 7-UP,лід</td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Мілк-шейк</h3>
+                        </td>
+                        <th>190/53</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>вершковий / полуничний / банановий / шоколадний</td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Mojito 0%</h3>
+                        </td>
+                        <th>425/76</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>лайм, м'ята, 7-UP або содова, лід</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Cocktails</h2>
+                        </td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>non-alcoholic</h2>
+                        </td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Smurfette</h3>
+                        </td>
+                        <th>360/70</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>Blue curacao syrup, Pineapple juice, 7-UP, ice</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Milk shake</h3>
+                        </td>
+                        <th>190/53</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>creamy / strawberry / banana / chocolate</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Mojito 0%</h3>
+                        </td>
+                        <th>425/76</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>Lime, mint, 7-UP or soda, ice</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </div>
-<!--=============================ALC=======================
+        <!--=============================ALC=======================
 =====================================================================-->
-    <div class="dropdown">
+        <!-- <div class="dropdown">
         <button data-lang="ua" onclick="myFunction('btn4')" class="dropbtn">АЛКОГОЛЬНІ НАПОЇ</button>
             <button data-lang="eng" onclick="myFunction('btn4')" class="dropbtn">ALCOHOL</button>
         <div id="btn4" class="dropdown-content">
@@ -481,38 +869,31 @@
                 <tr data-lang="ua"><td><h3>Хортиця Класична</h3></td><th>50 / 33</th></tr>
                 <tr data-lang="eng"><td><h3>Khortytsya Classic</h3></td><th>50 / 33</th></tr>
                 <tr><td><h3>Gray Goose</h3></td><th>50 / 95</th></tr>
-<!--                -->
                 <tr data-lang="ua"><td><h2>Текіла</h2></td></tr>
                  <tr data-lang="eng"><td><h2>Tequila</h2></td></tr>
                 <tr><td><h3>Olmeca Blanco</h3></td><th>50 / 75</th></tr>
-<!--                -->
                 <tr data-lang="ua"><td><h2>Віскі</h2></td></tr>
                  <tr data-lang="eng"><td><h2>Whiskey</h2></td></tr>
                  <tr><td><h3>William Lawson's</h3></td><th>50 / 55</th></tr>
                 <tr><td><h3>Jameson</h3></td><th>50 / 93</th></tr>
                 <tr><td><h3>Dewar's 12 y.o.</h3></td><th>50 / 145</th></tr>
                 <tr><td><h3>Chivas 12 Years Old </h3></td><th>50 / 123</th></tr>
-                
-<!--                -->
                 <tr data-lang="ua"><td><h2>Ром</h2></td></tr>
                 <tr data-lang="eng"><td><h2>Rum</h2></td></tr>
                 <tr><td><h3>Bacardi Spiced</h3></td><th>50 / 65</th></tr>
                 <tr><td><h3>Bacardi Anejo 4 Cuatro</h3></td><th>50 / 85</th></tr>
                 <tr><td><h3>Oakheart</h3></td><th>50 / 59</th></tr>
                 <tr><td><h3>Bacardi Carta Blanca</h3></td><th>50 / 59</th></tr>
-<!--                -->
                 <tr data-lang="ua"><td><h2>Джин</h2></td></tr>
                  <tr data-lang="eng"><td><h2>Gin</h2></td></tr>
                <tr><td><h3>Bombay Sapphire</h3></td><th>50 / 89</th></tr>
                 <tr><td><h3>Beefeater</h3></td><th>50 / 75</th></tr>
-<!--                -->
                 <tr data-lang="ua"><td><h2>Бренді</h2></td></tr>
                 <tr data-lang="eng"><td><h2>Brandy</h2></td></tr>
                 <tr data-lang="ua"><td><h3>АрАрАт 5*</h3></td><th>50 / 73</th></tr>
                 <tr data-lang="eng"><td><h3>ArArAt 5*</h3></td><th>50 / 73</th></tr>
                 <tr><td><h3>Martel VS</h3></td><th>50 / 173</th></tr>
                 <tr><td><h3>Shustoff Old History 3*</h3></td><th>50 / 42</th></tr>
-<!--                -->
                 <tr data-lang="ua"><td><h2>Лікери та</h2></td></tr>
                 <tr data-lang="ua"><td><h2> настоянки</h2></td></tr>
                     <tr data-lang="eng"><td><h2>Liquors and</h2></td></tr>
@@ -522,13 +903,11 @@
               
                 <tr><td><h3>Martini Riserva Bitter</h3></td><th>50 / 46</th></tr>
                 <tr><td><h3>Aperol</h3></td><th>50 / 54</th></tr>
-<!--                -->
                 <tr data-lang="ua"><td><h2>Вермути</h2></td></tr>
                     <tr data-lang="eng"><td><h2>Vermouth</h2></td></tr>
                 <tr><td><h3>Martini</h3></td><th>50 / 46</th></tr>
                 <tr><td>Bianco / Rosso / Extra dry</td></tr>
                 <tr><td><h3>Martini  Fiero</h3></td><th>50 / 46 </th></tr>
-<!--                -->
                 <tr data-lang="ua"><td><h2>Ігристі вина</h2></td></tr>
                 <tr data-lang="ua"><td><h3>VILLA MARE</h3></td><th>750 / 187</th></tr>
                 <tr data-lang="ua"><td><h3>Fragolino Bianco</h3></td></tr>
@@ -537,14 +916,12 @@
                 <tr data-lang="eng"><td><h3>VILLA MARE</h3></td><th>750 / 187</th></tr>
                 <tr data-lang="eng"><td><h3>Fragolino Bianco</h3></td></tr>
                 <tr data-lang="eng"><td><h3>Martini Proseco</h3></td><th>750 / 514</th></tr>
-<!--                -->
                 <tr data-lang="ua"><td><h2>Глінтвейни</h2></td></tr>
                 <tr data-lang="ua"><td><h3>Брюнетка / Блондинка</h3></td><th>200 / 81</th></tr>
                 <tr data-lang="ua"><td>із барбарисом / із мандарином</td></tr>
                     <tr data-lang="eng"><td><h2>Mulled wine</h2></td></tr>
                     <tr data-lang="eng"><td><h3>Brunette / Blonde</h3></td><th>200 / 81</th></tr>
                     <tr data-lang="eng"><td>with barberry / with mandarin</td></tr>
-<!--                -->
                 <td data-lang="ua"><h2>Коктелі</h2><th data-lang="ua">МЛ / ГРН</th>
                 <tr data-lang="ua"><td><h3>Bacardi Mojito</h3></td><th>420 / 91</th></tr>
                 <tr data-lang="ua"><td>ром Bacardi Carta Blanca, 7-UP або содова, цукор, лайм, м'ята, лід</td></tr>
@@ -566,7 +943,6 @@
                 <tr data-lang="ua"><td>червоне сухе вино, журавлинний морс, сироп Мопіп ожина, Мопіп малина, лід</td></tr>
                 <tr data-lang="ua"><td><h3>Bombay Tonic</h3></td><th>355 / 106</th></tr>
                 <tr data-lang="ua"><td>джин Bombay Sapphire, тонік, лайм, лід</td></tr>
-<!--                -->
                     <td data-lang="eng"><h2>Cocktails</h2></td><th data-lang="eng">ML / UAH</th>
                     <tr data-lang="eng"><td><h3>Bacardi Mojito</h3></td><th>420 / 91</th></tr>
                     <tr data-lang="eng"><td>Bacardi Carta Blanca, 7-UP or soda, sugar, lime, mint, ice</td></tr>
@@ -590,557 +966,1951 @@
                     <tr data-lang="eng"><td>Bombay Sapphire gin, tonic, lime, ice</td></tr>
            </table>
         </div>
-    </div>
-<!--===================BEER=======================
+    </div> -->
+        <!--===================BEER=======================
 ===================================================-->
-    <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn5')" class="dropbtn">ПИВО</button>
-         <button data-lang="eng" onclick="myFunction('btn5')" class="dropbtn">BEER</button>
-        <div id="btn5" class="dropdown-content">
-           <table>
-              <tr data-lang="ua"><td><h2>Пиво розливне</h2></td><th>МЛ / ГРН</th></tr>
-               <tr data-lang="ua"><td><h3>Carelsberg</h3></td><th>300 / 500 | 37 / 47</th></tr>
-               <tr data-lang="ua"><td><h3>Kronenbourg 1664 Blanc</h3></td><th>330 / 500 | 51 / 58</th></tr>
-               <tr data-lang="ua"><td><h3>Grimbergen</h3></td><th>300 / 500 | 60 / 81</th></tr>
-                <tr data-lang="eng"><td><h2>Draft beer</h2></td><th>ML / UAH</th></tr>
-                <tr data-lang="eng"><td><h3>Carelsberg</h3></td><th>300 / 500 | 37 / 47</th></tr>
-                <tr data-lang="eng"><td><h3>Kronenbourg 1664 Blanc</h3></td><th>330 / 500 | 51 / 58</th></tr>
-                <tr data-lang="eng"><td><h3>Grimbergen</h3></td><th>300 / 500 | 60 / 81</th></tr>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn5')" class="dropbtn">ПИВО</button>
+            <button data-lang="eng" onclick="myFunction('btn5')" class="dropbtn">BEER</button>
+            <div id="btn5" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Пиво розливне</h2>
+                        </td>
+                        <th>МЛ / ГРН</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Carelsberg</h3>
+                        </td>
+                        <th>300 / 500 | 41 / 52</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Kronenbourg 1664 Blanc</h3>
+                        </td>
+                        <th>330 / 500 | 56 / 64</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Grimbergen</h3>
+                        </td>
+                        <th>300 / 500 | 66 / 89</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Draft beer</h2>
+                        </td>
+                        <th>ML / UAH</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Carelsberg</h3>
+                        </td>
+                        <th>300 / 500 | 41 / 52</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Kronenbourg 1664 Blanc</h3>
+                        </td>
+                        <th>330 / 500 | 56 / 64</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Grimbergen</h3>
+                        </td>
+                        <th>300 / 500 | 66 / 89</th>
+                    </tr>
 
-<!--               -->
-                        <tr data-lang="ua"><td><h2>Пляшкове</h2></td></tr>
-                       <tr data-lang="ua"><td><h3>Кумпель Крафт</h3></td><th> 330 / 45</th></tr>
-                       <tr data-lang="ua"><td><h3>Carlsberg безалкогольне</h3></td><th> 450 / 49</th></tr>
-                       <tr data-lang="ua"><td><h3>Tuborg Green</h3></td><th>500 / 49</th></tr>
-                       <tr data-lang="ua"><td><h3>Somersby</h3></td><th> 500 / 49</th></tr>
-                       <tr data-lang="eng"><td><h2>Bottled Beer</h2></td></tr>
-                       <tr data-lang="eng"><td><h3>Kumpel Kraft</h3></td><th> 330 / 45</th></tr>
-                       <tr data-lang="eng"><td><h3>Carlsberg non-alcoholic</h3></td><th> 450 / 49</th></tr>
-                       <tr data-lang="eng"><td><h3>Tuborg Green</h3></td><th>500 / 49</th></tr>
-                       <tr data-lang="eng"><td><h3>Somersby</h3></td><th> 500 / 49</th></tr>
-           </table>
+                    <!--               -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Пляшкове</h2>
+                        </td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Кумпель Крафт</h3>
+                        </td>
+                        <th> 330 / 54</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Carlsberg безалкогольне</h3>
+                        </td>
+                        <th> 450 / 52</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Tuborg Green</h3>
+                        </td>
+                        <th>500 / 52</th>
+                    </tr>
+                    <!-- <tr data-lang="ua"><td><h3>Somersby</h3></td><th> 500 / 49</th></tr> -->
+                    <!--  -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Bottled Beer</h2>
+                        </td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Kumpel Kraft</h3>
+                        </td>
+                        <th> 330 / 54</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Carlsberg non-alcoholic</h3>
+                        </td>
+                        <th> 450 / 52</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Tuborg Green</h3>
+                        </td>
+                        <th>500 / 52</th>
+                    </tr>
+                    <!-- <tr data-lang="eng"><td><h3>Somersby</h3></td><th> 500 / 49</th></tr> -->
+                </table>
+            </div>
         </div>
-    </div>
-<!--=====================PIZZA CELENTANO==============
+        <!--=====================PIZZA CELENTANO==============
 =====================================================================-->
-    <div class="dropdown">
-        <button  data-lang="ua" onclick="myFunction('btn6')" class="dropbtn">ПІЦА CELENTANO</button>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn6')" class="dropbtn">ПІЦА CELENTANO</button>
             <button data-lang="eng" onclick="myFunction('btn6')" class="dropbtn">PIZZA CELENTANO</button>
             <div id="btn6" class="dropdown-content">
-            <table>
-                <tr data-lang="ua"><td><h2>ПІЦА</h2></td><th>M/L / ГРН</th></tr>
-                <tr data-lang="ua"><td><h2>Сирний борт</h2></td><th>70 / 120 | 30/ 45</th></tr>
-                <tr data-lang="ua"><td><h3>Кватро Формаджі</h3></td><th>360/810 | 197/349</th></tr>
-                <tr data-lang="ua"><td>соус Бешамель, сир моцарела, сир горгонзола, сир радомер, сир пармезан</td></tr>
-             
-                <tr data-lang="ua"><td><h3>Цезаре Верде </h3></td><th>445/1000 | 175/330</th></tr>
-                <tr data-lang="ua"><td>зелений соус, бекон, куряче філе, мікс-салат, сири пармезан,помід чері, моцарела та соус Цезаре</td></tr>
-            
-                <tr data-lang="ua"><td><h3>Біанко Верде </h3></td><th>390/930 | 205/380</th></tr>
-                <tr data-lang="ua"><td>зелений соус,моцарела, прошуто, сир моцарела фреска, вершки , сир пармезан</td></tr>
-            
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>ПІЦА</h2>
+                        </td>
+                        <th>M/L / ГРН</th>
+                    </tr>
 
-              <tr data-lang="ua"><td><h3>Цезаре </h3></td><th>420/940 | 191/325</th></tr>
-              <tr data-lang="ua"><td>домашній томатний соус, бекон, куряче філе, мікс-салат, сири пармезан, моцарела та соус Цезаре</td></tr>
-                <tr data-lang="ua"><td><h3> Маргарита</h3></td><th>320/700 |  149/252</th></tr>
-                <tr data-lang="ua"><td>домашній томатний соус, базилік та моцарела</td></tr>
-                <tr data-lang="ua"><td><h3>Палермо</h3></td><th>415/1090 | 184/312</th></tr>
-                <tr data-lang="ua"><td>домашній  томатний соус, бекон, шинка, салямі, печериці, маслини та моцарела</td></tr>
-                <tr data-lang="ua"><td><h3>Гавайська</h3></td><th>365/940 |  149/265</th></tr>
-                <tr data-lang="ua"><td>домашній томатний соус, куряче філе, ананаси та моцарела</td></tr>
-                <tr data-lang="ua"><td><h3>Пепероні</h3></td><th>410/1000 |  172/290</th></tr>
-                <tr data-lang="ua"><td>домашній томатний соус, салямі пікантне, переці пепероні та чілі, фета та моцарела</td></tr>
-                <tr data-lang="ua"><td><h3>Баварська</h3></td><th>400/1030 | 172/290</th></tr>
-                <tr data-lang="ua"><td>домашній томатний соус, мисливські ковбаски, шинка, печериці, помідори та моцарела</td></tr>
-                <tr data-lang="ua"><td><h3>Салямі та фунгі</h3></td><th>385/890 | 149/265</th></tr>
-                <tr data-lang="ua"><td>вершковий соус, моцарела, свіжі помідори, салямі та печериці</td></tr>
-          
-                <tr data-lang="ua"><td><h3>Капрічіоза</h3></td><th>400/970 | 197/349</th></tr>
-                <tr data-lang="ua"><td>домашній томатний соус, прошуто, салямі, печериці, артишоки та моцарела</td></tr>
-               <tr data-lang="ua"><td><h3>Карбонара з помідорами чері та руколою</h3></td><th>420/1000 |197/349</th></tr>
-               <tr data-lang="ua"><td> соус Карбонара, прошуто, помідори чері, рукола, пармезан, та моцарела</td></tr>
-             
-                <tr data-lang="ua"><td><h3>Діабола</h3></td><th>380/915 | 172/290</th></tr>
-                <tr data-lang="ua"><td>домашній томатний соус, салямі пікантне, перці болгарський та чілі, маслини та моцарела</td></tr>
-                <tr data-lang="ua"><td><h3>Капрезе</h3></td><th>400/900 | 197/349</th></tr>
-                <tr data-lang="ua"><td>домашній томатний соус, помідори, моцарела фреска, базилік і соус Песто</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Кватро Формаджі</h3>
+                        </td>
+                        <th>360/810 | 217/384</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>соус Бешамель, сир моцарела, сир горгонзола, сир радомер, сир пармезан</td>
+                    </tr>
 
-        
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Біанко Верде </h3>
+                        </td>
+                        <th>390/930 | 226/418</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>зелений соус,моцарела, прошуто, сир моцарела фреска, вершки , сир пармезан</td>
+                    </tr>
 
-                <tr data-lang="ua"><td><h3>Барбекю</h3></td><th>400/900 | 172/273</th></tr>
-                <tr data-lang="ua"><td>домашній томатний соус, куряче філе,перероні маренований, мацарела,червона цибуля,соус барбекю</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Піца з тартаром з лосося</h3>
+                        </td>
+                        <th>450/1050 | 300/422</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>зелений соус, сир мацарела, лосось, цукіні, каперси, мацарела фреска, вершки</td>
+                    </tr>
 
-                <tr data-lang="ua"><td><h3>Гофредо</h3></td><th>455/920 | 172/290</th></tr>
-                <tr data-lang="ua"><td>домашній томатний соус,шинка,салямі,помідори,маринована цибуля та моцарела</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Цезаре </h3>
+                        </td>
+                        <th>420/940 | 210/358</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус, бекон, куряче філе, мікс-салат, сири пармезан, моцарела та соус
+                            Цезаре</td>
+                    </tr>
 
-                <tr data-lang="ua"><td><h3>Кальцоне з тунцем </h3></td><th>360 | 176</th></tr>
-                <tr data-lang="ua"><td>закрита піца з тунцем,фетою,мацарелою,пармезаном і маринованю цибулею</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3> Маргарита</h3>
+                        </td>
+                        <th>320/700 | 164/277</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус, базилік та моцарела</td>
+                    </tr>
 
-               
-<!--  -->
-                <tr data-lang="eng"><td><h2>PIZZA</h2></td><th>M/L / UAH</th></tr>
-                <tr data-lang="eng"><td><h2>Cheesy crust</h2></td><th>70/ 120 | 35 / 45</th></tr>
-                <tr data-lang="eng"><td><h3>Quattro Formaggi</h3></td><th>360/810 |197/349</th></tr>
-                <tr data-lang="eng"><td>sauce Beshamel, cheese mozzarella, cheese gorgonzola, cheese radomer, cheese parmesan</td></tr>
-                <tr data-lang="eng"><td><h3>Cesare Verde</h3></td><th>445/1000 | 175/330</th></tr>
-                <tr data-lang="eng"><td>green sauce, bacon, chicken fillet, mixed salad, parmesan cheese, cherry tomato, mozzarella and cesarean sauce</td></tr>
-              
-                <tr data-lang="eng"><td><h3>Bianco Verde</h3></td><th>390/930 | 205/380</th></tr>
-                <tr data-lang="eng"><td>green sauce, mozzarella, prosciutto, mozzarella cheese fresco, cream, parmesan cheese</td></tr>
-            
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Палермо</h3>
+                        </td>
+                        <th>415/1090 | 202/343</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус, бекон, шинка, салямі, печериці, маслини та моцарела</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Гавайська</h3>
+                        </td>
+                        <th>365/940 | 164/292</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус, куряче філе, ананаси та моцарела</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Пепероні</h3>
+                        </td>
+                        <th>410/1000 | 189/319</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус, салямі пікантне, переці пепероні та чілі, фета та моцарела</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Баварська</h3>
+                        </td>
+                        <th>400/1030 | 189/319</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус, мисливські ковбаски, шинка, печериці, помідори та моцарела</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Салямі та фунгі</h3>
+                        </td>
+                        <th>385/890 | 164/292</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>вершковий соус, моцарела, свіжі помідори, салямі та печериці</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Капрічіоза</h3>
+                        </td>
+                        <th>400/970 | 217/384</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус, прошуто, салямі, печериці, артишоки та моцарела</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Карбонара з помідорами чері та руколою</h3>
+                        </td>
+                        <th>420/1000| 217/384</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td> соус Карбонара, прошуто, помідори чері, рукола, пармезан, та моцарела</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Діабола</h3>
+                        </td>
+                        <th>380/915 | 189/319</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус, салямі пікантне, перці болгарський та чілі, маслини та моцарела</td>
+                    </tr>
 
 
-                <tr data-lang="eng"><td><h3>Caesare </h3></td><th>420/940 |172/305</th></tr>
-                <tr data-lang="eng"><td>home tomato sauce, bacon, chicken fillet, mix salad, cheese parmesan, mozzarella and Cesare sauce</td></tr>
-                <tr data-lang="eng"><td><h3>Margarita</h3></td><th>320/700 |  149/252</th></tr>
-                <tr data-lang="eng"><td>home tomato sauce, basil and mozzarella</td></tr>
-                <tr data-lang="eng"><td><h3>Palermo</h3></td><th>415/1090 | 184/312</th></tr>
-                <tr data-lang="eng"><td>home tomato sauce, bacon, ham, salami, mushrooms, olives and mozzarella</td></tr>
-                <tr data-lang="eng"><td><h3>Hawaiian</h3></td><th>365/940 |  149/265</th></tr>
-                <tr data-lang="eng"><td>home tomato sauce, chicken filet, pineapple and mozzarella</td></tr>
-                <tr data-lang="eng"><td><h3>Peperoni</h3></td><th>410/1000 | 172/290</th></tr>
-                <tr data-lang="eng"><td>home tomato sauce, salami spicy, pepperoni and chili, feta and mozzarella</td></tr>
-                <tr data-lang="eng"><td><h3>Bavarian</h3></td><th>400/1030 |152/270</th></tr>
-                <tr data-lang="eng"><td>home tomato sauce, hunting sausages, ham, mushrooms, tomatoes and mozzarella</td></tr>
-                <tr data-lang="eng"><td><h3>Salami and Funghi</h3></td><th>385/890 | 149/265</th></tr>
-                <tr data-lang="eng"><td>cream sauce, mozzarella, fresh tomatoes, salami and champignons</td></tr>  
-          
-                <tr data-lang="eng"><td><h3>Capricciosa</h3></td><th>400/970 |197/349</th></tr>
-                <tr data-lang="eng"><td>home tomato sauce, prostito, salami, mushrooms, artichoke and mozzarella</td></tr>
-                <tr data-lang="eng"><td><h3>Carbonara with cherry tomatoes and rucicle</h3></td><th>420/1000 | 197/349 </th></tr>
-                <tr data-lang="eng"><td> Carbonara sauce, protrude, cheri tomatoes, rukola, parmesan, and mozzarella</td></tr>
-    
-                <tr data-lang="eng"><td><h3>Diabola</h3></td><th>380/915 |152/270</th></tr>
-                <tr data-lang="eng"><td>home tomato sauce, salami piquant, peppers bulgarian and chili, olives and mozzarella</td></tr>
-                <tr data-lang="eng"><td><h3>Caprese</h3></td><th>400/900 | 197/349</th></tr>
-                <tr data-lang="eng"><td>home tomato sauce, tomatoes, mozzarella fresca, basil and Pesto sauce</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Барбекю</h3>
+                        </td>
+                        <th>400/900 | 189/300</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус, куряче філе,перероні маренований, мацарела,червона цибуля,соус
+                            барбекю</td>
+                    </tr>
 
-        
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Гофредо</h3>
+                        </td>
+                        <th>455/920 | 187/280</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус,шинка,салямі,помідори,маринована цибуля та моцарела</td>
+                    </tr>
 
-                <tr data-lang="eng"><td><h3>Barbecue</h3></td><th>400/900 | 172/273</th></tr>
-                <tr data-lang="eng"><td>homemade tomato sauce, chicken fillet,marenized, matsarella,red onion,barbecue sauce</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Кальцоне з салямі</h3>
+                        </td>
+                        <th>360 | 194</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>домашній томатний соус,шинка,салямі пікантне, помідори, печериці, сири мацарела та пармезан
+                        </td>
+                    </tr>
 
-                <tr data-lang="eng"><td><h3>Gofredo</h3></td><th>455/920 |172/290</th></tr>
-                <tr data-lang="eng"><td>homemade tomato sauce,ham,salami,tomatoes,pickled onions and mozzarella</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Пізелі Верде</h3>
+                        </td>
+                        <th>440 | 226</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>соус із зеленого горошку, мацарела, польпетті, томати в'ялені, цукіні,сир пармезан</td>
+                    </tr>
 
-                <tr data-lang="eng"><td><h3>Calzone with tuna </h3></td><th>360 | 176</th></tr>
-                <tr data-lang="eng"><td>closed pizza with tuna, feta, matsarella, parmesan and pickled onions</td></tr>
+                    <!--  -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>PIZZA</h2>
+                        </td>
+                        <th>M/L / UAH</th>
+                    </tr>
 
-             <!--                -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Quattro Formaggi</h3>
+                        </td>
+                        <th>360/810 | 217/384</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>sauce Beshamel, cheese mozzarella, cheese gorgonzola, cheese radomer, cheese parmesan</td>
+                    </tr>
 
-            </table>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Bianco Verde</h3>
+                        </td>
+                        <th>390/930 | 226/418</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>green sauce, mozzarella, prosciutto, mozzarella cheese fresco, cream, parmesan cheese</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Pizza with salmon tartare</h3>
+                        </td>
+                        <th>450/1050 | 300/422</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>green sauce, matsarella cheese, salmon, zucchini, capers, matsarella fresco, cream</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Caesare </h3>
+                        </td>
+                        <th>420/940 | 210/358</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce, bacon, chicken fillet, mix salad, cheese parmesan, mozzarella and Cesare
+                            sauce</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Margarita</h3>
+                        </td>
+                        <th>320/700 | 164/277</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce, basil and mozzarella</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Palermo</h3>
+                        </td>
+                        <th>415/1090 | 202/343</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce, bacon, ham, salami, mushrooms, olives and mozzarella</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Hawaiian</h3>
+                        </td>
+                        <th>365/940 | 164/292</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce, chicken filet, pineapple and mozzarella</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Peperoni</h3>
+                        </td>
+                        <th>410/1000 | 189/319</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce, salami spicy, pepperoni and chili, feta and mozzarella</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Bavarian</h3>
+                        </td>
+                        <th>400/1030 | 189/319</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce, hunting sausages, ham, mushrooms, tomatoes and mozzarella</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Salami and Funghi</h3>
+                        </td>
+                        <th>385/890 | 164/292</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>cream sauce, mozzarella, fresh tomatoes, salami and champignons</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Capricciosa</h3>
+                        </td>
+                        <th>400/970 | 217/384</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce, prostito, salami, mushrooms, artichoke and mozzarella</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Carbonara with cherry tomatoes and rucicle</h3>
+                        </td>
+                        <th>420/1000 |217/384</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td> Carbonara sauce, protrude, cheri tomatoes, rukola, parmesan, and mozzarella</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Diabola</h3>
+                        </td>
+                        <th>380/915 | 189/319</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce, salami piquant, peppers bulgarian and chili, olives and mozzarella</td>
+                    </tr>
+
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Barbecue</h3>
+                        </td>
+                        <th>400/900 | 189/300</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce, chicken fillet,marenized, matsarella,red onion,barbecue sauce</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Gofredo</h3>
+                        </td>
+                        <th>455/920 | 187/280</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>homemade tomato sauce,ham,salami,tomatoes,pickled onions and mozzarella</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Calzone with salami</h3>
+                        </td>
+                        <th>360 | 194</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>home tomato sauce,ham,spicy salami, tomatoes, mushrooms, matsarella cheeses and parmesan
+                        </td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Piseli Verde</h3>
+                        </td>
+                        <th>440 | 226</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>green peas sauce, matsarella, polpetti, dried tomatoes, zucchini, Parmesan cheese</td>
+                    </tr>
+
+                    <!--                -->
+
+                </table>
+            </div>
         </div>
-    </div>
-<!--==============================PIZZA EGOISTA====================
+        <!--==============================PIZZA EGOISTA====================
 ==============================================================-->
-    <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn7')" class="dropbtn">ПІЦА EGOЇСТА</button>
-        <button data-lang="eng" onclick="myFunction('btn7')" class="dropbtn">PIZZA EGOЇСТА</button>
-        <div id="btn7" class="dropdown-content">
-            <table>
-            <tr data-lang="ua"><td><h2>Основа,Сир</h2></td><th><h3>M / L | ГРН</h3></th></tr>
-                <tr data-lang="ua"><td><h2> + Соус</h2></td></tr>
-                <tr data-lang="ua"><td><h3>Томатний / вершковий</h3></td><th>305 / 750 | 60 / 108</th></tr>
-                <tr data-lang="ua"><td><h3>Сирний борт</h3></td><th>70/ 120 | 30 / 45</th></tr>
-                <tr data-lang="ua"><td><h2>М'ясні</h2></td><th><h3> M / L | ГРН</h3></th></tr>
-                <tr data-lang="ua"><td><h3>Прошуто</h3></td><th>30 / 60 | 43 / 75  </th></tr>
-                <tr data-lang="ua"><td><h3>Салямі пікантне</h3></td><th>25 / 50 | 28 / 51  </th></tr>
-                <tr data-lang="ua"><td><h3>Куряче філе</h3></td><th>50 / 100 |  28 / 51  </th></tr>
-                <tr data-lang="ua"><td><h3>Шинка свинна</h3></td><th>40 / 80 |  28 / 51  </th></tr>
-                <tr data-lang="ua"><td><h3>Бекон</h3></td><th>40 / 80 | 28 / 519  </th></tr>
-                <tr data-lang="ua"><td><h3>Мисливські ковбаски</h3></td><th>50 / 100 |  28 / 51 </th></tr>
-                <tr data-lang="ua"><td><h3>Телятина гриль</h3></td><th>45 / 90 | 43 / 75 </th></tr>
-                <tr data-lang="ua"><td><h2> РИБНІ</h2></td><th><h3>M / L | ГРН</h3></th></tr>
-                <tr data-lang="ua"><td><h3>Креветки</h3></td><th>45 / 60 | 125 / 167  </th></tr>     
-                <tr data-lang="ua"><td><h3>Лосось</h3></td><th>45 / 80 | 62 / 110  </th></tr>
-                <tr data-lang="ua"><td><h3>Тунець</h3></td><th>45 / 80 |  37 / 66  </th></tr>
-                <tr data-lang="ua"><td><h2> Овочеві</h2></td><th><h3>M / L | ГРН</h3></th></tr>
-                <tr data-lang="ua"><td><h3>Печериці</h3></td><th>40 / 80 | 22 / 37 </th></tr>
-                <tr data-lang="ua"><td><h3>Перець пепероні маринований</h3></td><th>50 / 100 | 22 / 37 </th></tr>
-                <tr data-lang="ua"><td><h3>Перець болгарський</h3></td><th>40  / 21 |22 / 37 </th></tr>
-                <tr data-lang="ua"><td><h3>Перець чілі</h3></td><th>10 / 20 |22 / 37  </th></tr>
-                <tr data-lang="ua"><td><h3>Ананаси</h3></td><th>40 / 80 | 22 / 37 </th></tr>
-                <tr data-lang="ua"><td><h3>Кукурудза</h3></td><th>30 / 60 |22 / 37  </th></tr>
-                <tr data-lang="ua"><td><h3>Помідори чері</h3></td><th>40 / 80 | 22 / 41  </th></tr>
-                <tr data-lang="ua"><td><h3>Помідори</h3></td><th>50 / 21 | 22 / 37  </th></tr>
-                <tr data-lang="ua"><td><h2>Сирні</h2></td><th><h3>M / L | ГРН</h3></th></tr>
-                <tr data-lang="ua"><td><h3>Моцарелла фреска</h3></td><th>50 / 80 | 43 / 62  </th></tr>
-                <tr data-lang="ua"><td><h3>Фета</h3></td><th>40 / 80 | 28 / 51  </th></tr>
-                <tr data-lang="ua"><td><h3>Радомер</h3></td><th>50 / 100 | 35 / 62  </th></tr>
-                <tr data-lang="ua"><td><h3>Моцарелла</h3></td><th>50 / 100 | 28 / 51  </th></tr>
-                <tr data-lang="ua"><td><h3>Пармезан</h3></td><th>15 / 25 | 28 / 41  </th></tr>
-                <tr data-lang="ua"><td><h2>Соуси</h2></td><th><h3>M / L | ГРН</h3></th></tr>
-                <tr data-lang="ua"><td><h3>Крем-соус Бальзамічний</h3></td><th>10 / 20 | 14 / 26  </th></tr>
-                <tr data-lang="ua"><td><h3>Табаско</h3></td><th>10 / 20 | 21 / 39  </th></tr>
-                <tr data-lang="ua"><td><h3>Песто</h3></td><th>30 / 50 | 21 / 33 </th></tr>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn7')" class="dropbtn">ПІЦА EGOЇСТА</button>
+            <button data-lang="eng" onclick="myFunction('btn7')" class="dropbtn">PIZZA EGOЇСТА</button>
+            <div id="btn7" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Основа,Сир</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | ГРН</h3>
+                        </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2> + Соус</h2>
+                        </td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Томатний / вершковий</h3>
+                        </td>
+                        <th>305 / 750 | 60 / 118</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Сирний борт</h3>
+                        </td>
+                        <th>70/ 120 | 33 / 50</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>М'ясні</h2>
+                        </td>
+                        <th>
+                            <h3> M / L | ГРН</h3>
+                        </th>
+                    </tr>
 
-<!--                -->
-<!--       ENG         -->
-<!--                -->
-                <tr data-lang="eng"><td><h2>Basis,Cheese</h2></td><th><h3>M / L | UAH</h3></th></tr>
-                <tr data-lang="eng"><td><h2> + Sause</h2></td></tr>
-                <tr data-lang="eng"><td><h3>Tomato / Creamy</h3></td><th>305 / 750 | 60 / 108</th></tr>
-                <tr data-lang="eng"><td><h3>Cheesy crust</h3></td><th>70/ 120 | 30 / 45</th></tr>
-                <tr data-lang="eng"><td><h2>Meat</h2></td><th><h3> M / L | UAH</h3></th></tr>
-                <tr data-lang="eng"><td><h3>Prosciutto</h3></td><th>30 / 60 | 43 / 75  </th></tr>
-                <tr data-lang="eng"><td><h3>Salami piquant</h3></td><th>25 / 50 |  28 / 51  </th></tr>
-                <tr data-lang="eng"><td><h3>Chicken fillet </h3></td><th>50 / 100 | 28 / 51 </th></tr>
-                <tr data-lang="eng"><td><h3>Ham</h3></td><th>40 / 80 |  28 / 51</th></tr>
-                <tr data-lang="eng"><td><h3>Bacon</h3></td><th>40 / 80 |  28 / 51</th></tr>
-                <tr data-lang="eng"><td><h3>Hunter's sausage</h3></td><th>50 / 100 |  28 / 51  </th></tr>
-                <tr data-lang="eng"><td><h3>Grilled veal</h3></td><th>45 / 90 | 43 / 75 </th></tr>
-                <tr data-lang="eng"><td><h2> Fishy</h2></td><th><h3>M / L | UAH</h3></th></tr>
-                <tr data-lang="eng"><td><h3>Shrimps</h3></td><th>45 / 60 | 127 / 167  </th></tr>
-                <tr data-lang="eng"><td><h3>Salmon</h3></td><th>45 / 80 | 62 / 110  </th></tr>
-                <tr data-lang="eng"><td><h3>Tuna</h3></td><th>45 / 80 | 37 / 66  </th></tr>
-                <tr data-lang="eng"><td><h2> Vegetables</h2></td><th><h3>M / L | UAH</h3></th></tr>
-                <tr data-lang="eng"><td><h3>Mushrooms</h3></td><th>40 / 80 |22 / 37 </th></tr>
-                <tr data-lang="eng"><td><h3>Pickled pepperoni pepper</h3></td><th>50 / 100 |22 / 37 </th></tr>
-                <tr data-lang="eng"><td><h3>Bulgarian pepper</h3></td><th>40  / 21 | 22 / 35 </th></tr>
-                <tr data-lang="eng"><td><h3>Chilli pepper</h3></td><th>10 / 20 |22 / 37  </th></tr>
-                <tr data-lang="eng"><td><h3>Pineapples</h3></td><th>40 / 80 | 22 / 37 </th></tr>
-                <tr data-lang="eng"><td><h3>Corn</h3></td><th>30 / 60 |22 / 37 </th></tr>
-                <tr data-lang="eng"><td><h3>Cherry tomatoes</h3></td><th>40 / 80 | 22 / 41  </th></tr>
-                <tr data-lang="eng"><td><h3>Tomatoes</h3></td><th>50 / 21 | 100 / 35  </th></tr>
-                <tr data-lang="eng"><td><h2>Cheeses</h2></td><th><h3>M / L | ГРН</h3></th></tr>
-                <tr data-lang="eng"><td><h3>Mozzarella fresco</h3></td><th>50 / 80 | 43 / 62  </th></tr>
-                <tr data-lang="eng"><td><h3>Feta</h3></td><th>40 / 80 | 28 / 51  </th></tr>
-                <tr data-lang="eng"><td><h3>Radomer</h3></td><th>50 / 100 | 35 / 62  </th></tr>
-                <tr data-lang="eng"><td><h3>Mozzarella</h3></td><th>50 / 100 | 28 / 51  </th></tr>
-                <tr data-lang="eng"><td><h3>Parmigiano</h3></td><th>15 / 25 | 28 / 51  </th></tr>
-                <tr data-lang="eng"><td><h2>Sauces</h2></td><th><h3>M / L | ГРН</h3></th></tr>
-                <tr data-lang="eng"><td><h3>Balsamic cream-sauce</h3></td><th>10 / 20 | 14 / 26  </th></tr>
-                <tr data-lang="eng"><td><h3>Tabasco sauce</h3></td><th>10 / 20 | 21 / 39  </th></tr>
-                <tr data-lang="eng"><td><h3>Pesto</h3></td><th>30 / 50 | 21 / 33  </th></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Прошуто</h3>
+                        </td>
+                        <th>30 / 60 | 47 / 83 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Салямі пікантне</h3>
+                        </td>
+                        <th>25 / 50 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Куряче філе</h3>
+                        </td>
+                        <th>50 / 100 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Шинка свинна</h3>
+                        </td>
+                        <th>40 / 80 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Бекон</h3>
+                        </td>
+                        <th>40 / 80 | 28 / 56 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Мисливські ковбаски</h3>
+                        </td>
+                        <th>50 / 100 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Телятина гриль</h3>
+                        </td>
+                        <th>45 / 90 | 47 / 83 </th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h2> РИБНІ</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | ГРН</h3>
+                        </th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Лосось</h3>
+                        </td>
+                        <th>45 / 80 | 68 / 121 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Тунець</h3>
+                        </td>
+                        <th>45 / 80 | 41 / 73 </th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h2> Овочеві</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | ГРН</h3>
+                        </th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Печериці</h3>
+                        </td>
+                        <th>40 / 80 | 24 / 41 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Перець пепероні маринований</h3>
+                        </td>
+                        <th>50 / 100 | 24 / 41 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Перець болгарський</h3>
+                        </td>
+                        <th>40 / 21 | 24 / 39 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Перець чілі</h3>
+                        </td>
+                        <th>10 / 20 | 24 / 41 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Ананаси</h3>
+                        </td>
+                        <th>40 / 80 | 24 / 41 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Кукурудза</h3>
+                        </td>
+                        <th>30 / 60 | 24 / 41 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Помідори чері</h3>
+                        </td>
+                        <th>40 / 80 | 24 / 45 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Помідори</h3>
+                        </td>
+                        <th>50 / 21 | 24 / 41 </th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Сирні</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | ГРН</h3>
+                        </th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Моцарелла фреска</h3>
+                        </td>
+                        <th>50 / 80 | 47 / 68 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Фета</h3>
+                        </td>
+                        <th>40 / 80 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Радомер</h3>
+                        </td>
+                        <th>50 / 100 | 39 / 68 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Моцарелла</h3>
+                        </td>
+                        <th>50 / 100 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Пармезан</h3>
+                        </td>
+                        <th>15 / 25 | 31 / 45 </th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h2>Соуси</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | ГРН</h3>
+                        </th>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Крем-соус Бальзамічний</h3>
+                        </td>
+                        <th>10 / 20 | 16 / 28 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Табаско</h3>
+                        </td>
+                        <th>10 / 20 | 44 / 60 </th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Песто</h3>
+                        </td>
+                        <th>30 / 50 | 44 / 60 </th>
+                    </tr>
+
+                    <!--                -->
+                    <!--       ENG         -->
+                    <!--                -->
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Basis,Cheese</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | UAH</h3>
+                        </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2> + Sause</h2>
+                        </td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Tomato / Creamy</h3>
+                        </td>
+                        <th>305 / 750 | 60 / 118</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Cheesy crust</h3>
+                        </td>
+                        <th>70/ 120 | 30 / 45</th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Meat</h2>
+                        </td>
+                        <th>
+                            <h3> M / L | UAH</h3>
+                        </th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Prosciutto</h3>
+                        </td>
+                        <th>30 / 60 | 47 / 83 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Salami piquant</h3>
+                        </td>
+                        <th>25 / 50 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Chicken fillet </h3>
+                        </td>
+                        <th>50 / 100 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Ham</h3>
+                        </td>
+                        <th>40 / 80 | 31 / 56</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Bacon</h3>
+                        </td>
+                        <th>40 / 80 | 31 / 56</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Hunter's sausage</h3>
+                        </td>
+                        <th>50 / 100 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Grilled veal</h3>
+                        </td>
+                        <th>45 / 90 | 47 / 83 </th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h2> Fishy</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | UAH</h3>
+                        </th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Salmon</h3>
+                        </td>
+                        <th>45 / 80 | 68 / 121 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Tuna</h3>
+                        </td>
+                        <th>45 / 80 | 41 / 73 </th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h2> Vegetables</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | UAH</h3>
+                        </th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Mushrooms</h3>
+                        </td>
+                        <th>40 / 80 |24 / 41 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Pickled pepperoni pepper</h3>
+                        </td>
+                        <th>50 / 100 | 24 / 41 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Bulgarian pepper</h3>
+                        </td>
+                        <th>40 / 21 | 24 / 39 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Chilli pepper</h3>
+                        </td>
+                        <th>10 / 20 | 24 / 41 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Pineapples</h3>
+                        </td>
+                        <th>40 / 80 | 24 / 41 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Corn</h3>
+                        </td>
+                        <th>30 / 60 | 24 / 41 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Cherry tomatoes</h3>
+                        </td>
+                        <th>40 / 80 | 24 / 45 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Tomatoes</h3>
+                        </td>
+                        <th>50 / 21 | 100 / 35 </th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Cheeses</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | ГРН</h3>
+                        </th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Mozzarella fresco</h3>
+                        </td>
+                        <th>50 / 80 | 47 / 68 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Feta</h3>
+                        </td>
+                        <th>40 / 80 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Radomer</h3>
+                        </td>
+                        <th>50 / 100 | 39 / 68 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Mozzarella</h3>
+                        </td>
+                        <th>50 / 100 | 31 / 56 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Parmigiano</h3>
+                        </td>
+                        <th>15 / 25 | 31 / 45 </th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h2>Sauces</h2>
+                        </td>
+                        <th>
+                            <h3>M / L | ГРН</h3>
+                        </th>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Balsamic cream-sauce</h3>
+                        </td>
+                        <th>10 / 20 | 16 / 28 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Tabasco sauce</h3>
+                        </td>
+                        <th>10 / 20 | 44 / 60 </th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Pesto</h3>
+                        </td>
+                        <th>30 / 50 | 44 / 60 </th>
+                    </tr>
 
 
-            </table>
+                </table>
 
 
+            </div>
         </div>
-    </div>
 
-    <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn8')" class="dropbtn">СНІДАНКИ</button>
-        <button data-lang="eng" onclick="myFunction('btn8')" class="dropbtn">BREAKFAST</button>
-        <div id="btn8" class="dropdown-content">
-            <table>
-<!--                -->
-<!--                -->
-                <tr data-lang="ua"><td><h4 style="color:#ff0000;">До сніданку в подарунок кава/чай на вибір*</h4></td></tr>
-                <tr data-lang="eng"><td><h4 style="color:#ff0000;">Before breakfast, a coffee/tea choice*</h4></td></tr>
-                <tr data-lang="ua"><td><h4 style="color:#ff0000;">ДО 12:00</h4></td></tr>
-                <tr data-lang="eng"><td><h4 style="color:#ff0000;">TO 12:00</h4></td></tr>
-                <tr data-lang="ua"><td><h5>*американо з молоком/без, еспресо, капучіно, лате та чай листовий при замовленні страв з меню</h5></td></tr>
-                <tr data-lang="eng"><td><h5>*americano/american with milk, espresso, cappuccino, latte and tea leaves with a dish order from menu</h5></td></tr>
-     
-                <tr data-lang="ua"><td><h3>Омлет </h3></td><th>230 / 91</th></tr>
-                <tr data-lang="ua"><td> з печеною куркою та беконом</td></tr>
-                <tr data-lang="eng"><td><h3>Omelette</h3></td><th>230 / 91</th></tr>
-                <tr data-lang="eng"><td> with baked chicken and bacon</td></tr>
-                <!--  -->
-                <tr data-lang="ua"><td><h3>Омлет </h3></td><th>230 /91</th></tr>
-                <tr data-lang="ua"><td>з тунцем та свіжими овочима</td></tr>
-                <tr data-lang="eng"><td><h3>Omelette </h3></td><th>230 /91</th></tr>
-                <tr data-lang="eng"><td>with tuna and fresh vegetables</td></tr>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn8')" class="dropbtn">СНІДАНКИ</button>
+            <button data-lang="eng" onclick="myFunction('btn8')" class="dropbtn">BREAKFAST</button>
+            <div id="btn8" class="dropdown-content">
+                <table>
+                    <!--                -->
 
-         
-                <tr data-lang="ua"><td><h3>Яйця бенедикт </h3></td><th>290 / 85</th></tr>
-                <tr data-lang="ua"><td>на тостах зі смаженим беконом, шпинатом та руколою</td></tr>
-                <tr data-lang="eng"><td><h3>Eggs benedict </h3></td><th>290 / 85</th></tr>
-                <tr data-lang="eng"><td>on toast with roasted bacon, spinach and rusty</td></tr>
-         
-                <tr data-lang="ua"><td><h3>Сирники </h3></td><th>200/30 / 105</th></tr>
-                <tr data-lang="ua"><td>з ягідним соусом та сметаною</td></tr>
-                <tr data-lang="eng"><td><h3>Cheesecakes </h3></td><th>200/30 / 105</th></tr>
-                <tr data-lang="eng"><td>with berries sauce and cream</td></tr>
-            
-            
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Омлет </h3>
+                        </td>
+                        <th>230 / 101</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td> з печеною куркою та беконом</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Omelette</h3>
+                        </td>
+                        <th>230 / 101</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td> with baked chicken and bacon</td>
+                    </tr>
+                    <!--  -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Омлет </h3>
+                        </td>
+                        <th>230 /100</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з тунцем та свіжими овочима</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Omelette </h3>
+                        </td>
+                        <th>230 /100</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with tuna and fresh vegetables</td>
+                    </tr>
 
 
-            </table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Яйця бенедикт </h3>
+                        </td>
+                        <th>290 / 100</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>на тостах зі смаженим беконом, шпинатом та руколою</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Eggs benedict </h3>
+                        </td>
+                        <th>290 / 100</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>on toast with roasted bacon, spinach and rusty</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Сирники </h3>
+                        </td>
+                        <th>200/30 / 115</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з ягідним соусом та сметаною</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Cheesecakes </h3>
+                        </td>
+                        <th>200/30 / 115</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with berries sauce and cream</td>
+                    </tr>
+
+
+
+
+                </table>
+            </div>
         </div>
-    </div>
-    <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn17')" class="dropbtn">МЛИНЦІ</button>
-        <button data-lang="eng" onclick="myFunction('btn17')" class="dropbtn">PANCAKES</button>
-        <div id="btn17" class="dropdown-content">
-            <table>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn17')" class="dropbtn">МЛИНЦІ</button>
+            <button data-lang="eng" onclick="myFunction('btn17')" class="dropbtn">PANCAKES</button>
+            <div id="btn17" class="dropdown-content">
+                <table>
 
-                <tr data-lang="ua"><td><h3>Млинець Соренто</h3></td><th>185 / 91</th></tr>
-                <tr data-lang="ua"><td>крем-сир з кропом, лосось,фета,мікс-салат,огірки, соус бальзамічний</td></tr>
-                <tr data-lang="eng"><td><h3>Sorento pancake</h3></td><th>185 / 91</th></tr>
-                <tr data-lang="eng"><td>cream cheese with dill, salmon,feta,mix salad,cucumbers, balsamic sauce</td></tr>
-                <!--  -->
-                <tr data-lang="ua"><td><h3>Млинець Цезаре</h3></td><th>210 / 76</th></tr>
-                <tr data-lang="ua"><td>куряче філе, мікс-салат, моцарела, помідори, соус Цезаре і бекон</td></tr>
-                <tr data-lang="eng"><td><h3>Cesari pancake</h3></td><th>210 / 76</th></tr>
-                <tr data-lang="eng"><td>chicken fillet, mix salad, mozzarella, tomatoes, Caesarean sauce and bacon</td></tr>
-                <!--  -->
-                <tr data-lang="ua"><td><h3>Млинець Капрезе</h3></td><th>175 / 64</th></tr>
-                <tr data-lang="ua"><td>моцарела, помідори, мікс-салат, рукола, бальзамічний крем соус</td></tr>
-                <tr data-lang="eng"><td><h3>Caprese pancake</h3></td><th>175 / 64</th></tr>
-                <tr data-lang="eng"><td>chicken fillet, mix salad, mozzarella, tomatoes, Caesarean sauce and bacon</td></tr>
-               <!--  -->
-                <tr data-lang="ua"><td><h3>З бананом та шоколадом</h3></td><th>210 / 57</th></tr>
-                <tr data-lang="ua"><td>з вершковим морозивом</td></tr>
-                <tr data-lang="eng"><td><h3>With banana and chocolate </h3></td><th>210 / 57</th></tr>
-                <tr data-lang="eng"><td>with cream ice cream </td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Млинець Соренто</h3>
+                        </td>
+                        <th>185 / 121</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>крем-сир з кропом, лосось,фета,мікс-салат,огірки, соус бальзамічний</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Sorento pancake</h3>
+                        </td>
+                        <th>185 / 121</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>cream cheese with dill, salmon,feta,mix salad,cucumbers, balsamic sauce</td>
+                    </tr>
+                    <!--  -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Млинець Цезаре</h3>
+                        </td>
+                        <th>210 / 91</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>куряче філе, мікс-салат, моцарела, помідори, соус Цезаре і бекон</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Cesari pancake</h3>
+                        </td>
+                        <th>210 / 91</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>chicken fillet, mix salad, mozzarella, tomatoes, Caesarean sauce and bacon</td>
+                    </tr>
+                    <!--  -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Млинець Капрезе</h3>
+                        </td>
+                        <th>175 / 77</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>моцарела, помідори, мікс-салат, рукола, бальзамічний крем соус</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Caprese pancake</h3>
+                        </td>
+                        <th>175 / 77</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>chicken fillet, mix salad, mozzarella, tomatoes, Caesarean sauce and bacon</td>
+                    </tr>
+                    <!--  -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>З бананом та шоколадом</h3>
+                        </td>
+                        <th>210 / 68</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з вершковим морозивом</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>With banana and chocolate </h3>
+                        </td>
+                        <th>210 / 68</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with cream ice cream </td>
+                    </tr>
 
-            </table>
+                </table>
+            </div>
         </div>
-    </div>
-<!--/=====================PASTA========================\
+        <!--/=====================PASTA========================\
     \=================================================/-->
-    <div class="dropdown">
-        <button   data-lang="ua" onclick="myFunction('btn9')" class="dropbtn">ПАСТИ</button>
-        <button  data-lang="eng" onclick="myFunction('btn9')" class="dropbtn">PASTE</button>
-        <div id="btn9" class="dropdown-content">
-            <table>
-                <tr data-lang="ua"><td><h2></h2></td><th>Г / ГРН</th></tr>
-                <tr data-lang="eng"><td><h2></h2></td><th>G / UAH</th></tr>
-                <tr data-lang="ua"><td><h3>Карбонара</h3></td><th>255 / 141</th></tr>
-                <tr data-lang="ua"><td>з беконом, яйцем, часником та пармезаном</td></tr>
-                <tr data-lang="eng"><td><h3>Carbonara</h3></td><th>255 / 141</th></tr>
-                <tr data-lang="eng"><td>with bacon, egg, garlic and parmesan</td></tr>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn9')" class="dropbtn">ПАСТИ</button>
+            <button data-lang="eng" onclick="myFunction('btn9')" class="dropbtn">PASTE</button>
+            <div id="btn9" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>Г / ГРН</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>G / UAH</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Карбонара</h3>
+                        </td>
+                        <th>255 / 169</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з беконом, яйцем, часником та пармезаном</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Carbonara</h3>
+                        </td>
+                        <th>255 / 169</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with bacon, egg, garlic and parmesan</td>
+                    </tr>
 
-                <tr data-lang="ua"><td><h3>Тальятеле з соусом песто, моцарелою, страчатела та томатами конфі</h3></td><th>300 / 141</th></tr>
-                <tr data-lang="eng"><td><h3>Tagliatelle with pesto sauce, mozzarella, strachatel and confi tomatoes</h3></td><th>300 / 141</th></tr>
-                
-                <tr data-lang="ua"><td><h3>Тальятеле з лисичками, білими грибами і сирним соусом</h3></td><th>250 / 152</th></tr>
-                <tr data-lang="eng"><td><h3>Tagliatelle with chanterelles, mushrooms and cheese sauce</h3></td><th>250 / 152</th></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Чілі Поркета</h3>
+                        </td>
+                        <th>310 / 161</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>зі свининою, бол перцем, цибулею, часником,та перцем чілі</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Chili Porqueta</h3>
+                        </td>
+                        <th>310 / 161</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with pork, pain pepper, onion, garlic, and chili peppers</td>
+                    </tr>
 
-                <tr data-lang="ua"><td><h3>Поло Фунгі</h3></td><th>315 / 132</th></tr>
-                <tr data-lang="ua"><td>з курячим філе,білими грибами,печерицями,цибулею і часником під ніжним вершковим соусом</td></tr>
-                <tr data-lang="eng"><td><h3>Polo Fungi</h3></td><th>315 / 132</th></tr>
-                <tr data-lang="eng"><td>with chicken fillet,white mushrooms,mushrooms,onion and garlic with a delicate cream sauce</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Джузеппе</h3>
+                        </td>
+                        <th>270 / 146</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з прошутто крудо, помідорами чері, шпинатом, соус на основі білого вина, подається з яйцем
+                            пашот</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Giuseppe</h3>
+                        </td>
+                        <th>270 / 146</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with prosciutto crudo, cherry tomatoes, spinach, white wine-based sauce, served with poached
+                            egg</td>
+                    </tr>
 
-                <tr data-lang="ua"><td><h3><img src="menu/fish.jpg" width="30" height="30">Туно</h3></td><th>325 / 126</th></tr>
-                <tr data-lang="ua"><td>з тунцем, помідорами, цибулею і часником під ніжним вершковим соусом</td></tr>
-                <tr data-lang="eng"><td><h3><img src="menu/fish.jpg" width="30" height="30">Tuno</h3></td><th>325 / 126</th></tr>
-                <tr data-lang="eng"><td>with tuna, tomatoes, onions and garlic under the tender cream sauce</td></tr>
-              
-                <tr data-lang="ua"><td><h3><img src="menu/VEG.jpg" width="30" height="30"> Паста Кватро Формаджі</h3></td><th>290 / 141</th></tr>
-                <tr data-lang="ua"><td>сири пармезан, радомер, маскарпоне, горгонзола, печений часник, подається з грецькими горіхами та карамелізованою грушею</td></tr>
-                <tr data-lang="eng"><td><h3><img src="menu/VEG.jpg" width="30" height="30">Pasta Quatro Formaji</h3></td><th>290 / 141</th></tr>
-                <tr data-lang="eng"><td>cheese parmesan, radomer, mascarpone, horgonzola, baked garlic, served with greek nuts and caramelized pears</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3><img src="menu/fish.jpg" width="30" height="30">Туно</h3>
+                        </td>
+                        <th>325 / 151</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з тунцем, помідорами, цибулею і часником під ніжним вершковим соусом</td>
+                    </tr>
 
-            </table>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3><img src="menu/fish.jpg" width="30" height="30">Tuno</h3>
+                        </td>
+                        <th>325 / 151</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with tuna, tomatoes, onions and garlic under the tender cream sauce</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3><img src="menu/VEG.jpg" width="30" height="30"> Паста Кватро Формаджі</h3>
+                        </td>
+                        <th>290 / 169</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>сири пармезан, радомер, маскарпоне, горгонзола, печений часник, подається з грецькими
+                            горіхами та карамелізованою грушею</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3><img src="menu/VEG.jpg" width="30" height="30">Pasta Quatro Formaji</h3>
+                        </td>
+                        <th>290 / 169</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>cheese parmesan, radomer, mascarpone, horgonzola, baked garlic, served with greek nuts and
+                            caramelized pears</td>
+                    </tr>
+
+                </table>
+            </div>
         </div>
-    </div>
 
-    <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn10')" class="dropbtn">ФРЕШ САЛАТИ</button>
-        <button data-lang="eng" onclick="myFunction('btn10')" class="dropbtn">FRESH SALADS</button>
-        <div id="btn10" class="dropdown-content">
-            <table>
-                <tr data-lang="ua"><td><h2></h2></td><th>Г / ГРН</th></tr>
-                <tr data-lang="eng"><td><h2></h2></td><th>G / UAH</th></tr>
-                <tr data-lang="ua"><td><h3>З телятиною під соусом бальзамік</h3></td><th>190 / 142</th></tr>
-                <tr data-lang="ua"><td>телятина, пармезан, салатий-мікс, помідори чері, артишоки в маринаді, в'ялені томати</td></tr>
-                <tr data-lang="eng"><td><h3>With veal under sauce, balsamic</h3></td><th>190 / 142</th></tr>
-                <tr data-lang="eng"><td>veal, parmesan, salad-mix, cheri tomatoes, artisans in marinade, jaded tomatoes</td></tr>              
-              
-                <tr data-lang="ua"><td><h3>Цезар з куркою</h3></td><th>235 / 136</th></tr>
-                <tr data-lang="ua"><td>салат айсберг, бекон, куряче філе, крутони, помідори чері, пармезан, соус Цезар </td></tr>
-                <tr data-lang="eng"><td><h3>Caesar with chicken</h3></td><th>235 / 1136</th></tr>
-                <tr data-lang="eng"><td>salad iceberg, bacon, chicken file, crutone, tomato cherie, parmesan sauce Caesar</td></tr>
-             
-                <tr data-lang="ua"><td><h3>Цезар з лососем</h3></td><th>220 / 154</th></tr>
-                <tr data-lang="ua"><td>салат айсберг, лосось, крутони, помідори чері,базилік, пармезан, соус Цезар </td></tr>
-                <tr data-lang="eng"><td><h3>Caesar with salmon</h3></td><th>220 / 154</th></tr>
-                <tr data-lang="eng"><td>salad iceberg, salmon, crutone, tomato cherie,basil, parmesan sauce Caesar</td></tr>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn10')" class="dropbtn">ФРЕШ САЛАТИ</button>
+            <button data-lang="eng" onclick="myFunction('btn10')" class="dropbtn">FRESH SALADS</button>
+            <div id="btn10" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>Г / ГРН</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>G / UAH</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>З телятиною під соусом бальзамік</h3>
+                        </td>
+                        <th>190 / 170</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>телятина, пармезан, салатий-мікс, помідори чері, артишоки в маринаді, в'ялені томати</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>With veal under sauce, balsamic</h3>
+                        </td>
+                        <th>190 / 170</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>veal, parmesan, salad-mix, cheri tomatoes, artisans in marinade, jaded tomatoes</td>
+                    </tr>
 
-             
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Цезар з куркою</h3>
+                        </td>
+                        <th>235 / 163</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>салат айсберг, бекон, куряче філе, крутони, помідори чері, пармезан, соус Цезар </td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Caesar with chicken</h3>
+                        </td>
+                        <th>235 / 163</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>salad iceberg, bacon, chicken file, crutone, tomato cherie, parmesan sauce Caesar</td>
+                    </tr>
 
-                <tr data-lang="ua"><td><h3>З прошуто, грушею та горганзолою</h3></td><th>190 / 136</th></tr>
-                <tr data-lang="ua"><td>салатий-мікс, горгонзолою, свіжа груша, горішки кеш'ю, прошуто, червона цибуля, заправка на оливковій олії з травами</td></tr>
-                <tr data-lang="eng"><td><h3>With a prosciutto, pear, and gorgandol</h3></td><th>190 / 136</th></tr>
-                <tr data-lang="eng"><td>salad-mix, horgonzola, pea,  peanut, prosciutto, red onion, olive oil-and-herbs dressing</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Цезар з лососем</h3>
+                        </td>
+                        <th>220 / 215</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>салат айсберг, лосось, крутони, помідори чері,базилік, пармезан, соус Цезар </td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Caesar with salmon</h3>
+                        </td>
+                        <th>220 / 215</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>salad iceberg, salmon, crutone, tomato cherie,basil, parmesan sauce Caesar</td>
+                    </tr>
 
-                <tr data-lang="ua"><td><h3>Капрезе</h3></td><th>280 / 116</th></tr>
-                <tr data-lang="ua"><td>з моцарелою фрескою, помідорами під соусом Песто</td></tr>
-                <tr data-lang="eng"><td><h3>Caprese</h3></td><th>280 / 116</th></tr>
-                <tr data-lang="eng"><td>with mozzarella fresca, tomatoes with Pesto sauce</td></tr>
 
-          
-            </table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>З прошуто, грушею та горганзолою</h3>
+                        </td>
+                        <th>190 / 170</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>салатий-мікс, горгонзолою, свіжа груша, горішки кеш'ю, прошуто, червона цибуля, заправка на
+                            оливковій олії з травами</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>With a prosciutto, pear, and gorgandol</h3>
+                        </td>
+                        <th>190 / 170</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>salad-mix, horgonzola, pea, peanut, prosciutto, red onion, olive oil-and-herbs dressing</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Аркобалено</h3>
+                        </td>
+                        <th>280 / 135</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>мікс-салат, шпинат бейбі, огірок свіжий, помідори чері, кабачок свіжий, заправка італійська,
+                            трюфельна олія</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Arcobaleno</h3>
+                        </td>
+                        <th>280 / 135</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>salad-mix, spinach baby, fresh cucumber, cherry tomatoes, fresh zucchini, Italian dressing,
+                            truffle oil</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>З ягодами куркою та шпинатом</h3>
+                        </td>
+                        <th>280 / 135</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>мікс-салат, шпинат бейбі, курка печена, горіхи кеш'ю, полуниця свіжа, бальзамічний соус, сир
+                            пармезан, базилік</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>With chicken and spinach berries</h3>
+                        </td>
+                        <th>280 / 135</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>salad-mix, spinach baby, baked chicken, cashew nuts, fresh strawberries, balsamic sauce,
+                            Parmesan cheese, basil</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>З тунцем</h3>
+                        </td>
+                        <th>165 / 148</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>мікс-салат, тунець консервований, помідори чері, соус імбирний, кунжут, тим'ян</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>With Tuna</h3>
+                        </td>
+                        <th>165 / 148</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>salad-mix, canned tuna, cherry tomatoes, ginger sauce, sesame seeds, thyman</td>
+                    </tr>
+
+                </table>
+            </div>
         </div>
-    </div>
-<!-- ====================SOUPs============================             -->
-     <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn15')" class="dropbtn">СУПИ</button>
-        <button data-lang="eng" onclick="myFunction('btn15')" class="dropbtn">SOUPS</button>
-        <div id="btn15" class="dropdown-content">
-            <table>
-                <tr data-lang="ua"><td><h2></h2></td><th>Г / ГРН</th></tr>
-                <tr data-lang="eng"><td><h2></h2></td><th>G / UAH</th></tr>
-                <tr data-lang="ua"><td><h3>Страчатела</h3></td><th>270 / 78</th></tr>
-                <tr data-lang="ua"><td>курячий суп з яйцем, шпинатом, пармезаном</td></tr>
-<!---->
-                <tr data-lang="eng"><td><h3>Stracciatella</h3></td><th>270 / 78</th></tr>
-                <tr data-lang="eng"><td>chicken soup with egg, spinach, parmesan</td></tr>
-                <!--               -->
-                <tr data-lang="ua"><td><h3>Сирний крем-суп</h3></td><th>230 / 115</th></tr>
-                <tr data-lang="ua"><td>з прошуо та грушею</td></tr>
-            
-                <tr data-lang="eng"><td><h3>Creamy cheese soup</h3></th></td><th>230 / 115</th></tr>
-                <tr data-lang="eng"><td>with Prosciutto and pear</td></tr>
+        <!-- ====================SOUPs============================             -->
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn15')" class="dropbtn">СУПИ</button>
+            <button data-lang="eng" onclick="myFunction('btn15')" class="dropbtn">SOUPS</button>
+            <div id="btn15" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>Г / ГРН</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>G / UAH</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Страчатела</h3>
+                        </td>
+                        <th>270 / 94</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>курячий суп з яйцем, шпинатом, пармезаном</td>
+                    </tr>
+                    <!---->
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Stracciatella</h3>
+                        </td>
+                        <th>270 / 94</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>chicken soup with egg, spinach, parmesan</td>
+                    </tr>
+                    <!--               -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Сирний крем-суп</h3>
+                        </td>
+                        <th>230 / 135</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з прошуо та грушею</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Creamy cheese soup</h3>
+                            </th>
+                        </td>
+                        <th>230 / 135</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with Prosciutto and pear</td>
+                    </tr>
 
 
-                <tr data-lang="ua"><td><h3>Грибний крем-суп</h3></td><th>250 / 74</th></tr>
-                <tr data-lang="ua"><td>з печерицями, вершками, мускатним горіхом та паприкою</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Велютата з цвітної капусти </h3>
+                        </td>
+                        <th>230 / 72</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>суп на основі цвітної капусти з додаванням вершків</td>
+                    </tr>
 
-                <tr data-lang="eng"><td><h3>Mushroom cream soup</h3></td><th>250 / 74</th></tr>
-                <tr data-lang="eng"><td>with mushrooms, cream, nutmeg and paprika</td></tr>
- 
-            </table>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Cauliflower vetate</h3>
+                        </td>
+                        <th>230 / 72</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>cauliflower-based soup with cream</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Суп з зеленого горошку </h3>
+                        </td>
+                        <th>315 / 68</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>суп із зеленого горошку з томатами конкасе та паростками гороху</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Green pea soup</h3>
+                        </td>
+                        <th>315 / 68</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>green pea soup with concase tomatoes and pea sprouts</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </div>
-<!--================Main dishes===============
+        <!--================Main dishes===============
 ========================================-->
-    <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn11')" class="dropbtn">ОСНОВНІ СТРАВИ</button>
-        <button data-lang="eng" onclick="myFunction('btn11')" class="dropbtn">MAIN DISHES</button>
-        <div id="btn11" class="dropdown-content">
-           <table>
-               <tr data-lang="ua"><td><h2></h2></td><th>Г / ГРН</th></tr>
-               <tr data-lang="eng"><td><h2></h2></td><th>G / UAH</th></tr>
-               <tr data-lang="ua"><td><h3><img src="menu/NEW.jpg" width="30" height="30">Особуко з гарбузовими ньоками </h3></td><th>465 / 247</th></tr>
-               <tr data-lang="eng"><td><h3><img src="menu/NEW.jpg" width="30" height="30">Personalko with pumpkin nonoka </h3></td><th>465 / 247</th></tr>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn11')" class="dropbtn">ОСНОВНІ СТРАВИ</button>
+            <button data-lang="eng" onclick="myFunction('btn11')" class="dropbtn">MAIN DISHES</button>
+            <div id="btn11" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>Г / ГРН</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>G / UAH</th>
+                    </tr>
 
 
-               <tr data-lang="ua"><td><h3><img src="menu/NEW.jpg" width="30" height="30">Святкова індичка</h3></td><th>300 / 178</th></tr>
-               <tr data-lang="ua"><td>індичка з рікотою, шпинатом та в'яленими томатами. Подається з картопляним пюре з труфульною олією</td></tr>
-               <tr data-lang="eng"><td><h3><img src="menu/NEW.jpg" width="30" height="30">Festive turkey</h3></td><th>300 / 178</th></tr>
-               <tr data-lang="eng"><td>turkey with ricotte, spinach, and edematous tomatoes. Served with mashed potatoes with truffle oil</td></tr>
 
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Курячий стейк Поло Пепероне</h3>
+                        </td>
+                        <th>120 / 167</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>куряче філе, часник, тим'ян, помідори чері, мікс-салат, соус із печеного перцю</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Chicken steak Polo Pepperone</h3>
+                        </td>
+                        <th>120 / 167</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>chicken filet, garlic, thyme, tomato cheri, mix salad, sauce from baked pepper</td>
+                    </tr>
+                    <!--               -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3> Медальйони зі свинини </h3>
+                        </td>
+                        <th>170 / 218</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>під соусом з білих грибним </td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3> Pork medallions in white mushroom sauce</h3>
+                        </td>
+                        <th>170 / 218</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with white mushroom sauce</td>
+                    </tr>
+                    <!--               -->
 
-               <tr data-lang="ua"><td><h3>Курячий стейк Поло Пепероне</h3></td><th>120 / 139</th></tr>
-               <tr data-lang="ua"><td>куряче філе, часник, тим'ян, помідори чері, мікс-салат, соус із печеного перцю</td></tr>
-               <tr data-lang="eng"><td><h3>Chicken steak Polo Pepperone</h3></td><th>120 / 139</th></tr>
-               <tr data-lang="eng"><td>chicken filet, garlic, thyme, tomato cheri, mix salad, sauce from baked pepper</td></tr>
-<!--               -->
-               <tr data-lang="ua"><td><h3> Медальйони зі свинини </h3></td><th>170 / 182</th></tr>
-               <tr data-lang="ua"><td>під соусом з білих грибним </td></tr>
-               <tr data-lang="eng"><td><h3> Pork medallions in white mushroom sauce</h3></td><th>170 / 182</th></tr>
-               <tr data-lang="eng"><td>with white mushroom sauce</td></tr>
-<!--               -->
-       
-                <tr data-lang="ua"><td><h3>Лосось гриль під соусом песто</h3></td><th>125 / 271</th></tr>
-               <tr data-lang="ua"><td>з цукіні, баклажаном , мікс-салатом та болгарським перцем</td></tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Лосось гриль під соусом песто</h3>
+                        </td>
+                        <th>125 / 325</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з цукіні, баклажаном , мікс-салатом та болгарським перцем</td>
+                    </tr>
 
-               <tr data-lang="eng"><td><h3>Grill salmon under pesto sauce</h3></td><th>125 / 271</th></tr>
-               <tr data-lang="eng"><td>with zucchini, eggplant, mix salad and bulgarian pepper</td></tr>
-               <!--  -->
-               <tr data-lang="ua"><td><h3>Тальята з телятини </h3></td><th>120 / 162</th></tr>
-               <tr data-lang="ua"><td>із руколою та помідорами чері</td></tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Grill salmon under pesto sauce</h3>
+                        </td>
+                        <th>125 / 325</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with zucchini, eggplant, mix salad and bulgarian pepper</td>
+                    </tr>
+                    <!--  -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Тальята з телятини </h3>
+                        </td>
+                        <th>120 / 194</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>із руколою та помідорами чері</td>
+                    </tr>
 
-               <tr data-lang="eng"><td><h3>Veal tagliata</h3></td><th>120 / 162</th></tr>
-               <tr data-lang="eng"><td>with aruga and cherry tomatoes </td></tr>
-               <!--  -->
-        
-           </table>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Veal tagliata</h3>
+                        </td>
+                        <th>120 / 194</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with aruga and cherry tomatoes </td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Курка Сальтімбока</h3>
+                        </td>
+                        <th>350 / 183</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з бататом фрі та смаженим шпинатом</td>
+                    </tr>
+
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Saltimbok chicken</h3>
+                        </td>
+                        <th>350 / 183</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with sweet potato fries and fried spinach</td>
+                    </tr>
+                    <!--  -->
+
+                </table>
+            </div>
         </div>
-    </div>
-<!--===================================
+        <!--===================================
 ====================Garnish=========================-->
-    <div class="dropdown">
-         <button data-lang="ua" onclick="myFunction('btn12')" class="dropbtn">ГАРНІРИ</button>
-         <button data-lang="eng" onclick="myFunction('btn12')" class="dropbtn">GARNISH</button>
-        <div id="btn12" class="dropdown-content">
-           <table>
-               <tr data-lang="ua"><td><h2></h2></td><th>Г / ГРН</th></tr>
-               <tr data-lang="eng"><td><h2></h2></td><th>G / UAH</th></tr>
-               <tr data-lang="ua"><td><h3>Картопля з розмарином</h3></td><th>200 / 47</th></tr>
-               <tr data-lang="eng"><td><h3>Rosemary roasted potato</h3></td><th>200 / 47</th></tr>
-<!--               -->
-                
-                <tr data-lang="ua"><td><h3>Картопля фрі</h3></td><th>180 / 68</th></tr>
-                <tr data-lang="eng"><td><h3>French fries</h3></td><th>180 / 68</th></tr>
-              
-<!--               -->
-<tr data-lang="ua"><td><h3>Літні овочі гриль</h3></td><th>200 / 71</th></tr>
-               <tr data-lang="ua"><td>помідори, цукіні, баклажани,печериці та болгарський перець</td></tr>
-               <tr data-lang="eng"><td><h3>Grilled summer vegetables </h3></td><th>200 / 71</th></tr>
-               <tr data-lang="eng"><td>tomatoes, zucchini, eggplant, mushrooms and bell peppers </td></tr>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn12')" class="dropbtn">ГАРНІРИ</button>
+            <button data-lang="eng" onclick="myFunction('btn12')" class="dropbtn">GARNISH</button>
+            <div id="btn12" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>Г / ГРН</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>G / UAH</th>
+                    </tr>
+                    =
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Картопля фрі</h3>
+                        </td>
+                        <th>180 / 70</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>French fries</h3>
+                        </td>
+                        <th>180 / 70</th>
+                    </tr>
 
+                    <!--               -->
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Овочі гриль</h3>
+                        </td>
+                        <th>200 / 85</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>помідори, цукіні, баклажани,печериці та болгарський перець</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Grilled vegetables </h3>
+                        </td>
+                        <th>200 / 85</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>tomatoes, zucchini, eggplant, mushrooms and bell peppers </td>
+                    </tr>
 
-           </table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Різотто</h3>
+                        </td>
+                        <th>220 / 138</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з горганзолою та солодким перцем</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Risotto </h3>
+                        </td>
+                        <th>220 / 138</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with horganzola and sweet pepper</td>
+                    </tr>
+
+                </table>
+            </div>
         </div>
-    </div>
-<!--======================
+        <!--======================
 =============================antipasti=============-->
-    <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn13')" class="dropbtn">АНТІПАСТІ</button>
-        <button data-lang="eng" onclick="myFunction('btn13')" class="dropbtn">ANTIPASTI</button>
-        <div id="btn13" class="dropdown-content">
-           <table>
-               <tr data-lang="ua"><td><h2></h2></td><th>Г / ГРН</th></tr>
-               <tr data-lang="eng"><td><h2></h2></td><th>G / UAH</th></tr>
-      
-               <tr data-lang="ua"><td><h3>Мікс італійських мя'сних делікатесів</h3></td><th>135 / 212</th></tr>
-               <tr data-lang="eng"><td><h3>Mix of Italian meat delicacies</h3></td><th>135 / 212</th></tr>
-               <tr data-lang="ua"><td><h3>Брускета </h3></td><th>65 / 39</th></tr>
-               <tr data-lang="ua"><td>з прошуто та карамелізованою грушею</td></tr>
-               <tr data-lang="eng"><td><h3>Bruschetta </h3></td><th>65 / 39</th></tr>
-               <tr data-lang="eng"><td>with prosciutto and caramelized pear</td></tr>
-               <tr data-lang="ua"><td><h3>Фокача</h3></td><th>165 / 33</th></tr>
-               <tr data-lang="eng"><td><h3>Focaccia</h3></td><th>165 / 33</th></tr>
-               <!-- <tr data-lang="ua"><td><h3>Брускета з пате</h3></td><th>105 / 58</th></tr>
-               <tr data-lang="ua"><td>з в'ялених томатів,</td></tr>
-               <tr data-lang="ua"><td>страчателою та анчоусами </td></tr>
-               <tr data-lang="eng"><td><h3>Bruschetta with pate</h3></td><th>105 / 58</th></tr>
-               <tr data-lang="eng"><td>from tinned tomatoes,</td></tr>
-               <tr data-lang="eng"><td>strachatela  and anchovies </td></tr> -->
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn13')" class="dropbtn">АНТІПАСТІ</button>
+            <button data-lang="eng" onclick="myFunction('btn13')" class="dropbtn">ANTIPASTI</button>
+            <div id="btn13" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>Г / ГРН</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>G / UAH</th>
+                    </tr>
 
-                <tr data-lang="ua"><td><h3>Прошуто</h3></td><th>100 / 105</th></tr>
-                <tr data-lang="ua"><td>із сиром Буко та спеціями</td></tr>
-                <tr data-lang="eng"><td><h3>Prosciutto</h3></td><th>100 / 105</th></tr>
-                <tr data-lang="eng"><td>with Buco cheese and spices</td></tr>
-                <tr data-lang="ua"><td><h3>Лосось</h3></td><th>100 / 105</th></tr>
-                <tr data-lang="ua"><td>з сиром Буко та соусом Песто</td></tr>
-                <tr data-lang="eng"><td><h3>Salmon</h3></td><th>100 / 105</th></tr>
-                <tr data-lang="eng"><td>with Buco cheese and Pesto sauce</td></tr>
-             
-           </table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Мікс італійських мя'сних делікатесів</h3>
+                        </td>
+                        <th>135 / 212</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Mix of Italian meat delicacies</h3>
+                        </td>
+                        <th>135 / 212</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Брускета </h3>
+                        </td>
+                        <th>65 / 47</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з прошуто та карамелізованою грушею</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Bruschetta </h3>
+                        </td>
+                        <th>65 / 47</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with prosciutto and caramelized pear</td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Фокача</h3>
+                        </td>
+                        <th>165 / 40</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Focaccia</h3>
+                        </td>
+                        <th>165 / 40</th>
+                    </tr>
+
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Брезаола</h3>
+                        </td>
+                        <th>100 / 126</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>із сиром Буко та спеціями</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Brezaola</h3>
+                        </td>
+                        <th>100 / 126</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with Buco cheese and spices</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Прошуто</h3>
+                        </td>
+                        <th>100 / 126</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>із сиром Буко та спеціями</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Prosciutto</h3>
+                        </td>
+                        <th>100 / 126</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with Buco cheese and spices</td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Лосось</h3>
+                        </td>
+                        <th>100 / 126</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>з сиром Буко та соусом Песто</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Salmon</h3>
+                        </td>
+                        <th>100 / 126</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>with Buco cheese and Pesto sauce</td>
+                    </tr>
+
+                </table>
+            </div>
         </div>
-    </div>
-<!--==========================desserts=================
+        <!--==========================desserts=================
 =======================================================-->
-    <div class="dropdown">
-        <button data-lang="ua" onclick="myFunction('btn14')" class="dropbtn">ДЕСЕРТИ</button>
-        <button data-lang="eng" onclick="myFunction('btn14')" class="dropbtn">DESSERTS</button>
-        <div id="btn14" class="dropdown-content">
-           <table>
-               <tr data-lang="ua"><td><h2></h2></td><th>Г / ГРН</th></tr>
-               <tr data-lang="eng"><td><h2></h2></td><th>G / UAH</th></tr>
-               <tr data-lang="ua"><td><h3>Морозиво</h3></td><th>120 / 56</th></tr>
-               <tr data-lang="eng"><td><h3>Ice cream</h3></td><th>120 / 56</th></tr>
-               <tr data-lang="ua"><td><h3>Чізкейк класичний</h3></td><th>125 / 84</th></tr>
-               <tr data-lang="ua" ><td> під ягідним соусом</td></tr>
-               <tr data-lang="eng"><td><h3>Cheesecake classic </h3></td><th>125 / 84</th></tr>
-                <tr  data-lang="eng"><td>underneath berry sauce</td></tr>
-               <!-- <tr data-lang="ua"><td><h3> Шоколадний брауні з ягодами</h3></td><th>120 / 76</th></tr>
-               <tr data-lang="eng"> <td><h3> Chocolate Brownie with Berries</h3></td><th>120 / 76</th></tr> -->
-               <tr data-lang="ua"><td><h3>Персикова тарта з сирним кремом</h3></td><th>180 / 86</th></tr>
-               <tr data-lang="eng"> <td><h3> Peach tart with cheese cream</h3></td><th>180 / 86</th></tr>
-               <!-- <tr data-lang="ua"><td><h3>Меренга з ягодами</h3></td><th>90 / 35</th></tr>
-               <tr data-lang="eng"> <td><h3>Meringue with berries</h3></td><th>90/ 35</th></tr> -->
-           </table>
+        <div class="dropdown">
+            <button data-lang="ua" onclick="myFunction('btn14')" class="dropbtn">ДЕСЕРТИ</button>
+            <button data-lang="eng" onclick="myFunction('btn14')" class="dropbtn">DESSERTS</button>
+            <div id="btn14" class="dropdown-content">
+                <table>
+                    <tr data-lang="ua">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>Г / ГРН</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <th>G / UAH</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Морозиво</h3>
+                        </td>
+                        <th>120 / 67</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Ice cream</h3>
+                        </td>
+                        <th>120 / 67</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Чізкейк класичний</h3>
+                        </td>
+                        <th>125 / 100</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td> під ягідним соусом</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Cheesecake classic </h3>
+                        </td>
+                        <th>125 / 100</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>underneath berry sauce</td>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Ягідне тірамісу</h3>
+                        </td>
+                        <th>130 / 70</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Berry tiramisu</h3>
+                        </td>
+                        <th>130 / 70</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Меренга з ягодами</h3>
+                        </td>
+                        <th>90 / 75</th>
+                    </tr>
+                    <tr data-lang="ua">
+                        <td>легкий, повітряний десерт з сирним кремом та ягодами</td>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Merenga with berries</h3>
+                        </td>
+                        <th>90 / 75</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>light, airy dessert with cheese cream and berries</td>
+                    </tr>
+
+                    <tr data-lang="ua">
+                        <td>
+                            <h3>Поливка шоколадна/ягідна</h3>
+                        </td>
+                        <th> 13</th>
+                    </tr>
+                    <tr data-lang="eng">
+                        <td>
+                            <h3>Chocolate/berry irrigation</h3>
+                        </td>
+                        <th> 13</th>
+                    </tr>
+
+
+                </table>
+            </div>
         </div>
-    </div>
 
-</main>
+    </main>
 
-<footer>
-    <img src="menu/footer-image.png" width="600" height="140">
-    <div><h3>© Celentano 2020</h3></div>
-</footer>
-<script src="js/dropbtm.js"></script>
-<script src="js/animation.js"></script>
-<script src="js/lang.js"></script>
+    <footer>
+        <img src="menu/footer-image.png" width="600" height="140">
+        <div>
+            <h3>© Celentano 2020</h3>
+        </div>
+    </footer>
+    <script src="js/dropbtm.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/lang.js"></script>
 </body>
+
 </html>
-
-
