@@ -11,6 +11,10 @@ body{
 section{
     height: 100%;
 }
+a {
+    margin: 25px;
+}
+
 
 span{
     position: fixed;
